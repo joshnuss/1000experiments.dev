@@ -16,11 +16,23 @@
   <title>Experiment #{post.experiment}: {post.title}</title>
 </svelte:head>
 
-<span>Experiment #{post.experiment}</span>
-<h1>{post.title}</h1>
-
+<span class="experiment">Experiment #{post.experiment}</span>
 <Tags tags={post.tags}/>
 
-<div use:highlight>
+<h1>{post.title}</h1>
+
+<p>
+  <span class="author">By <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
+</p>
+
+
+<div class="content" use:highlight>
   {@html post.html}
 </div>
+
+<style>
+  .content {
+    font-size: 1.2rem;
+
+  }
+</style>

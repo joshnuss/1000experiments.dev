@@ -5,21 +5,29 @@
 {#each posts as post}
   <article>
     <a href={`/posts/${post.permalink}`}>
-      <span class="experiment">Experiment #{post.experiment}</span>
+      <span class="experiment">#{post.experiment}</span>
       <h2>{post.title}</h2>
-      <p>{post.summary}</p>
+      {#if post.summary}
+        <p>{post.summary}</p>
+      {/if}
     </a>
   </article>
 {/each}
 
 <style>
+  h2 {
+    display: inline-block;
+  }
   a {
     text-decoration: none;
   }
   a h2 {
     text-decoration: underline;
   }
-  a:hover h2, a:hover .experiment {
+  a:hover h2 {
     color: var(--highlight-color);
+  }
+  a:hover .experiment {
+    background: var(--highlight-color);
   }
 </style>

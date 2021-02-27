@@ -10,7 +10,7 @@
 
 <style>
   nav {
-    display: flex;
+    display: inline-flex;
     gap: 4px;
   }
 </style>
