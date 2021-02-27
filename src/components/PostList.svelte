@@ -11,3 +11,15 @@
     </a>
   </article>
 {/each}
+
+<style>
+  a {
+    text-decoration: none;
+  }
+  a h2 {
+    text-decoration: underline;
+  }
+  a:hover h2, a:hover .experiment {
+    color: var(--highlight-color);
+  }
+</style>
