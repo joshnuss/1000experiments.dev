@@ -13,9 +13,10 @@
 </script>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>Experiment #{post.experiment}: {post.title}</title>
 </svelte:head>
 
+<span>Experiment #{post.experiment}</span>
 <h1>{post.title}</h1>
 
 <Tags tags={post.tags}/>

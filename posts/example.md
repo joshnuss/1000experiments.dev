@@ -1,5 +1,6 @@
 ---
 title: Hello World
+experiment: 1
 summary: This is a post
 date: 2020-01-01
 permalink: 'test'
