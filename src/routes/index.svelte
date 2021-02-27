@@ -5,9 +5,9 @@
 </script>
 
 <svelte:head>
-  <title>Sample Weblog</title>
+  <title>1000experiments.com</title>
 </svelte:head>
 
-<h1>Sample Weblog</h1>
+<h1>1000 Experiments</h1>
 
 <PostList {posts}/>
