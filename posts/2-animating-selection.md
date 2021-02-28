@@ -16,14 +16,15 @@ It was done by hand coding a Svelte component ([code](https://svelte.dev/repl/e6
 I also did a typewriter example: https://svelte.dev/repl/543a55ffb5184821971fa243c95e4e03?version=3.34.0 which looks like this:
 ![Terminal typewriter](/images/terminal-typewriter.gif)
 
-A GIF is a really nice way to share a code listing on Twitter, for a presentation or for a video course. 
-I wondered if it was possible to make these more soft coded, so that it could work for any code. Maybe it could even be a VS code extension that just records your edits and generates a beautiful GIF/video.
+Code is usually a screenshot, but as a GIF I think it's even more compelling. It's a really nice way to share a code on social media, for a presentation or for a video course.
+I wondered if it was possible to make these more soft coded, that way it could work for any code. Maybe it could even end up as a VS code extension that records edits and generates a beautiful GIF/video.
 
-So today I'm experimenting recording the current selection, make a list of selections and then playing it back:
+So today I'm experimenting with recording the current selection, making a list of selections, and then playing it back.
+
+Here's the code:
 https://svelte.dev/repl/b2c83ff88a6d43a6b7f4cf882c0a8080?version=3.34.0
 
 ![example](/images/record-selection-animation.gif)
-
 
 This one worked out well, I located selections using `element.selectionStart` & `element.selectionEnd`, stored them in an array and then played them back using `element.setSelectionRange()`.
 
