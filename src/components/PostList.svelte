@@ -7,9 +7,6 @@
     <a href={`/posts/${post.permalink}`}>
       <span class="experiment">#{post.experiment}</span>
       <h2>{post.title}</h2>
-      {#if post.summary}
-        <p>{post.summary}</p>
-      {/if}
     </a>
   </article>
 {/each}
