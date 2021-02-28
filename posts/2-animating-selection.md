@@ -13,14 +13,17 @@ Lots of folks asked me how I did it.
 
 It was done by hand coding a Svelte component ([code](https://svelte.dev/repl/e6c3f24c6cc64e8c9ca8cc9405778df2?version=3.34.0)) that stepped thru a timeline of steps. Each step adds a CSS class, which does the highlighting, hides or displays part of the code.
 
-I wondered if it was possible to make this more soft coded, so that it would work for any code. I think a GIF is a handy way to share code listing on Twitter or for a presentation.
+I also did a typewriter example: https://svelte.dev/repl/543a55ffb5184821971fa243c95e4e03?version=3.34.0 wich looks like this:
+![Terminal typewriter](/images/terminal-typewriter.gif)
 
-Here's the experiment:
+I wondered if it was possible to make this more soft coded, so that it would work for any code. A GIF is a really nice way to share a code listing on Twitter, for a presentation or for a video course. Ideally it would end up as VS code extension that just records your edits and gives you a beautiful GIF.
+
+So today I'm experimenting which how I can locate the selection, make a list of selections and then play it back:
 https://svelte.dev/repl/b2c83ff88a6d43a6b7f4cf882c0a8080?version=3.34.0
 
 ![example](/images/record-selection-animation.gif)
 
-I found the current selection using `element.selectionStart` & `element.selectionEnd` and then play them back using `element.setSelectionRange()`.
 
-This one worked out well, it seems I can locate selections and play them back.
-To go further, I would probably need to explore deletions and additions too.
+This one worked out well, I located selections using `element.selectionStart` & `element.selectionEnd`, stored them in an array and then played them back using `element.setSelectionRange()`.
+
+To go further, I would explore recording deletions and additions too.
