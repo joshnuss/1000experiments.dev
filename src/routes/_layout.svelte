@@ -35,7 +35,7 @@
     padding: 2em 0;
     margin: 0 auto;
     box-sizing: border-box;
-    min-height: calc(100vh - 108px);
+    min-height: calc(100vh - 143px);
   }
 
   footer {
