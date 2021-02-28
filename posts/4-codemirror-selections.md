@@ -1,7 +1,7 @@
 ---
 title: Playback selections with CodeMirror
 experiment: 4
-date: "2021-02-27"
+date: "2021-02-28"
 permalink: codemirror-selection
 ---
 
