@@ -31,11 +31,14 @@
     color: #444;
     padding: 0.5rem 0.8rem;
     font-size: 1.1rem;
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
   }
   input[type=submit] {
     background: var(--alternate-color);
     color: #444;
-    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;   cursor: pointer;
   }
 
   .stack {

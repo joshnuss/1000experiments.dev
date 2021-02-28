@@ -20,6 +20,7 @@
   }
   a h2 {
     text-decoration: underline;
+    text-decoration-color: #ddd;
   }
   a:hover h2 {
     color: var(--highlight-color);

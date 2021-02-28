@@ -32,7 +32,7 @@
     position: relative;
     max-width: 56em;
     background-color: white;
-    padding: 2em 0;
+    padding: 2em 10px;
     margin: 0 auto;
     box-sizing: border-box;
     min-height: calc(100vh - 143px);
