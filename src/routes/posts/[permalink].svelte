@@ -1,5 +1,4 @@
 <script context="module">
-  import { format } from 'date-fns'
   import { findPost } from '@/posts'
 
   export function preload(page) {
@@ -8,9 +7,16 @@
 </script>
 
 <script>
+  import { onMount } from 'svelte'
+  import { format } from 'date-fns'
   import highlight from '@/highlight'
   import Tags from '@/components/Tags.svelte'
   export let post
+
+  onMount(() => {
+    if (twttr)
+      twttr.widgets.load();
+  })
 </script>
 
 <svelte:head>
@@ -28,7 +34,6 @@
   ●
   <span class="author">by <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
 </p>
-
 
 <div class="content" use:highlight>
   {@html post.html}

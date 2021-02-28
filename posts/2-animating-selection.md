@@ -9,7 +9,7 @@ permalink: recording-and-animating-input-selections
 A while back, I made a [GIF of refactoring React code to Svelte](https://twitter.com/joshnuss/status/1208520843132841984).
 Lots of folks asked me how I did it.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Refactoring some <a href="https://twitter.com/hashtag/reactjs?src=hash&amp;ref_src=twsrc%5Etfw">#reactjs</a> code to <a href="https://twitter.com/hashtag/sveltejs?src=hash&amp;ref_src=twsrc%5Etfw">#sveltejs</a> <a href="https://t.co/Z3qEIP4r5O">pic.twitter.com/Z3qEIP4r5O</a></p>&mdash; Josh Nussbaum (@joshnuss) <a href="https://twitter.com/joshnuss/status/1208520843132841984?ref_src=twsrc%5Etfw">December 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Refactoring some <a href="https://twitter.com/hashtag/reactjs?src=hash&amp;ref_src=twsrc%5Etfw">#reactjs</a> code to <a href="https://twitter.com/hashtag/sveltejs?src=hash&amp;ref_src=twsrc%5Etfw">#sveltejs</a> <a href="https://t.co/Z3qEIP4r5O">pic.twitter.com/Z3qEIP4r5O</a></p>&mdash; Josh Nussbaum (@joshnuss) <a href="https://twitter.com/joshnuss/status/1208520843132841984?ref_src=twsrc%5Etfw">December 21, 2019</a></blockquote>
 
 It was done by hand coding a Svelte component ([code](https://svelte.dev/repl/e6c3f24c6cc64e8c9ca8cc9405778df2?version=3.34.0)) that walks thru a list of CSS classes. Each class, either highlights, hides or displays lines.
 
