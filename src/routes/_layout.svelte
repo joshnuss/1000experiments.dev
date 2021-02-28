@@ -1,4 +1,6 @@
 <script>
+  import SignupForm from '@/components/SignupForm.svelte'
+
   // export let segment
 </script>
 
@@ -12,7 +14,7 @@
 <footer>
   <div class="container">
     <div>
-      &copy; Joshua Nussbaum 2021
+      <SignupForm/>
     </div>
     <div class="links">
       <a href="https://twitter.com/joshnuss">
