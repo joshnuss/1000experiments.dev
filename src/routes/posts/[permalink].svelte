@@ -1,5 +1,6 @@
 <script context="module">
-  import {findPost} from '@/posts'
+  import { format } from 'date-fns'
+  import { findPost } from '@/posts'
 
   export function preload(page) {
     return { post: findPost(page.params.permalink) }
@@ -22,7 +23,9 @@
 <h1>{post.title}</h1>
 
 <p>
-  <span class="author">By <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
+  <span class="date">{format(post.date, "do MMMM, yyyy")}</span>
+  ●
+  <span class="author">by <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
 </p>
 
 
@@ -33,6 +36,9 @@
 <style>
   .content {
     font-size: 1.2rem;
+  }
 
+  h1 {
+    margin-top: 10px;
   }
 </style>
