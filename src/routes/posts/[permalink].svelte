@@ -41,4 +41,8 @@
   h1 {
     margin-top: 10px;
   }
+
+  :global(code) {
+    font-size: 1.1rem !important;
+  }
 </style>
