@@ -4,7 +4,7 @@ import all from '../posts/*.md'
 
 export const posts = _.chain(all)
   .map(transform)
-  .orderBy('date', 'desc')
+  .orderBy(['experiment', 'date'], 'desc')
   .value()
 
 export function findPost(permalink) {
