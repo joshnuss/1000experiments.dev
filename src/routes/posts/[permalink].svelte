@@ -15,6 +15,7 @@
 
 <svelte:head>
   <title>Experiment #{post.experiment}: {post.title}</title>
+  <meta name="keywords" content={post.tags.join(',')}/>
 </svelte:head>
 
 <span class="experiment">Experiment #{post.experiment}</span>
