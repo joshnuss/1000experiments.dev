@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import { parse } from 'date-fns'
 import all from '../posts/*.md'
 
 export const posts = _.chain(all)
@@ -16,7 +17,7 @@ export function findByTag(tag) {
 
 function transform({filename, metadata, html}) {
   const permalink = metadata.permalink || filename.replace(/.md$/, '')
-  const date = new Date(metadata.date)
+  const date = parse(metadata.date, 'yyyy-MM-dd', new Date())
   let tags = []
 
   if (metadata.tags) {
