@@ -4,6 +4,7 @@ experiment: 2
 summary: Recording text selections and playing them back
 date: "2021-02-27"
 permalink: recording-and-animating-input-selections
+tags: animation, svelte
 ---
 
 A while back, I made a [GIF of refactoring React code to Svelte](https://twitter.com/joshnuss/status/1208520843132841984).
