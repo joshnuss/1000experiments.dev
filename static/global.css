@@ -38,6 +38,10 @@ a {
   border-radius: 3px;
   margin: 5px 0;
 }
+pre {
+  border-radius: 4px;
+  background: #222 !important;
+}
 
 code {
   font-family: menlo, inconsolata, monospace;
