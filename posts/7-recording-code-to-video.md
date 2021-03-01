@@ -6,9 +6,9 @@ permalink: recording-code-to-video
 tags: animation, svelte
 ---
 
-As I make some progress on the code animation stuff (See [last experiment](/posts/codemirror-add-remove-highlighting)) thought it would be good to figure out how to generate a video.
+As I make some progress on the code animation stuff (see [last experiment](/posts/codemirror-add-remove-highlighting)) thought it would be good to figure out how to generate a video of the animation.
 
-The good news is video recording is often used for testing websites, so I can use the same tools here.
+The good news is, video recording is often used for testing websites, so I can use the same tools here.
 
 Did some research and found [playwright](https://playwright.dev/) from Microsoft. It looks really good.
 
@@ -18,7 +18,7 @@ Installed it:
 yarn add playwright
 ```
 
-And then put together a small script. I was even able to get 4K output!
+And then put together a small script. It was even able to get 4K output!
 
 Here's the code:
 
