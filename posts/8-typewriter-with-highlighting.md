@@ -2,7 +2,7 @@
 title: Typewriter effect with highlighting
 experiment: 8
 date: "2021-03-01"
-permalink: typewriter-with-highlighting
+permalink: typewriter-effect-for-add
 tags: animation, svelte
 ---
 
