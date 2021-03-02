@@ -10,7 +10,7 @@ Continuing on with the animated code editor. I added the ability to mark multipl
 
 Here's the code:
 
-https://github.com/joshnuss/svelte-codemirror-test/commit/cfbc0964608145f5236d6c5d1e11ea83144e5df0
+https://github.com/joshnuss/svelte-codemirror-test/commit/b6a01556205aed8f1922f0b77b467a05a5ad50b8
 
 Here's what it looks like:
 
