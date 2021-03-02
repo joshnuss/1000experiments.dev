@@ -6,7 +6,7 @@ permalink: typewriter-with-highlighting
 tags: animation, svelte
 ---
 
-Continuing with animated code editor. I added the typewriter effect for removal and add a container that looks like a code editor.
+Continuing on with the animated code editor. I added a typewriter effect for code removal (looks like typing a backspace) and added a container to make it look like an editor window.
 
 Here's the code:
 
