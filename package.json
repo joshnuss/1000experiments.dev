@@ -11,6 +11,7 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
     "lint": "eslint . --ext .js,.svelte",
+    "record": "node scripts/generate.js",
     "deploy": "vercel deploy --prod"
   },
   "dependencies": {
@@ -37,6 +38,7 @@
     "lodash": "^4.17.19",
     "npm-run-all": "^4.1.5",
     "prism-themes": "^1.5.0",
+    "read": "^1.0.7",
     "rollup": "^2.6.1",
     "rollup-plugin-babel": "^4.0.2",
     "rollup-plugin-glob": "^1.0.2",
