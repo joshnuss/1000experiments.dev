@@ -27,7 +27,7 @@ function generate({title, experiment, tags, permalink}) {
   return `---
 title: ${title}
 experiment: ${experiment}
-date: ${format(new Date(), 'yyyy-MM-dd')}
+date: "${format(new Date(), 'yyyy-MM-dd')}"
 permalink: ${permalink}
 tags: ${tags}
 ---
@@ -45,6 +45,8 @@ read({prompt: 'title:'}, function (err, title) {
       tags
     })
     console.log(template)
-    fs.writeFileSync(`posts/${experiment}-${permalink}.md`, template)
+    const path = `posts/${experiment}-${permalink}.md`
+    fs.writeFileSync(path, template)
+    console.log(path)
   })
 })
