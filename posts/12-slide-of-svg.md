@@ -2,7 +2,7 @@
 title: Slides of SVG
 experiment: 12
 date: "2021-03-02"
-permalink: code-editor-scrolling
+permalink: slides-of-svg
 tags: animation, svelte
 ---
 
