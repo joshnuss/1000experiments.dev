@@ -51,18 +51,23 @@ Content here
 `
 }
 
-read({prompt: 'title:'}, function (err, title) {
-  read({prompt: 'tags:', default: ''}, function (err, tags) {
-    const template = generate({
-      title,
-      experiment,
-      permalink,
-      tags
+function prompt(callback) {
+  read({prompt: 'title:'}, function (err, title) {
+    read({prompt: 'tags:', default: ''}, function (err, tags) {
+      callback(title, tags)
     })
-    console.log(template)
-    const path = `posts/${experiment}-${permalink}.md`
-    fs.writeFileSync(path, template)
-    console.log(path)
-    openEditor(path)
   })
+}
+
+prompt((title, tags) => {
+  const path = `posts/${experiment}-${permalink}.md`
+  const template = generate({
+    title,
+    experiment,
+    permalink,
+    tags
+  })
+
+  fs.writeFileSync(path, template)
+  openEditor(path)
 })
