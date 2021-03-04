@@ -3,7 +3,7 @@ title: Multiple marks
 experiment: 10
 date: "2021-03-02"
 permalink: multiple-marks
-tags: animation, svelte
+tags: animation, svelte, code-video
 ---
 
 Continuing on with the animated code editor. I added the ability to mark multiple selections at the same time. The `class` and `style` attributes can be defined differently for each step.

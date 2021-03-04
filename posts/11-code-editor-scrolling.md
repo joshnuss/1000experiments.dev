@@ -3,7 +3,7 @@ title: Animated scrolling
 experiment: 11
 date: "2021-03-02"
 permalink: code-editor-scrolling
-tags: animation, svelte
+tags: animation, svelte, code-video
 ---
 
 Continuing on with the animated code editor. I added the ability to scroll vertically and horizontally. The cool thing is it uses Svelte's [`tweened`](https://svelte.dev/docs#tweened) store, so the scroll effect has easing and duration. As opposed to changing instantly, which would be jarring.

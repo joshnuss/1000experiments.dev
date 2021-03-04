@@ -3,7 +3,7 @@ title: Code editor annotations
 experiment: 15
 date: "2021-03-04"
 permalink: code-editor-annotations
-tags: code-editor, svelte, animation
+tags: code-video, svelte, animation
 ---
 
 Continuing on the animated code editor, I thought it would be helpful to display some captions, to annotate what each step is doing.

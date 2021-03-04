@@ -3,7 +3,7 @@ title: Typewriter effect with highlighting
 experiment: 8
 date: "2021-03-01"
 permalink: typewriter-effect-for-add
-tags: animation, svelte
+tags: animation, svelte, code-video
 ---
 
 Continuing with animated code editor. I added the typewriter effect for adding code. Probably should use typewriting for deleting as well, so it look s like the backspace key.

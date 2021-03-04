@@ -3,7 +3,7 @@ title: Playback selections with CodeMirror
 experiment: 4
 date: "2021-02-28"
 permalink: codemirror-selection
-tags: animation, svelte
+tags: animation, svelte, code-video
 ---
 
 Expanded on yesterday's [experiment #2](/posts/recording-and-animating-input-selections) and added syntax highlighting with [codemirror](https://codemirror.net/)

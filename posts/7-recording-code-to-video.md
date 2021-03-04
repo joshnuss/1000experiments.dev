@@ -3,7 +3,7 @@ title: Recording code session to video
 experiment: 7
 date: "2021-03-01"
 permalink: recording-code-to-video
-tags: animation, svelte
+tags: animation, svelte, code-video
 ---
 
 As I make some progress on the code animation stuff (see [last experiment](/posts/codemirror-add-remove-highlighting)) thought it would be good to figure out how to generate a video of the animation.
