@@ -2,6 +2,9 @@
 
 A web log of my dev experiments.
 
+Every day I do 3 experiments and record them here.
+[Learn more about why I am doing this](https://1000experiments.dev/posts/experimenting-in-public)
+
 ## Scripts
 
 ### yarn record
