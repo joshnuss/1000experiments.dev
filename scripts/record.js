@@ -3,9 +3,24 @@ const fs = require('fs')
 const glob = require('glob')
 const matter = require('gray-matter')
 const read = require('read')
+const child_process = require('child_process')
 
 const experiment = lastExperiment() + 1
 const permalink = process.argv[2]
+
+if (process.argv.length < 3)
+  throw new Error('file name argument must be specfied')
+
+function openEditor(path) {
+  const editor = process.env.EDITOR || 'vim'
+  const child = child_process.spawn(editor, [path], {
+    stdio: 'inherit'
+  })
+
+  child.on('exit', () => {
+    console.log('finished')
+  })
+}
 
 function lastExperiment() {
   let last = 0
@@ -48,5 +63,6 @@ read({prompt: 'title:'}, function (err, title) {
     const path = `posts/${experiment}-${permalink}.md`
     fs.writeFileSync(path, template)
     console.log(path)
+    openEditor(path)
   })
 })

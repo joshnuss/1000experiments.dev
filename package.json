@@ -11,7 +11,7 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
     "lint": "eslint . --ext .js,.svelte",
-    "record": "node scripts/generate.js",
+    "record": "node scripts/record.js",
     "deploy": "vercel deploy --prod"
   },
   "dependencies": {
