@@ -4,7 +4,9 @@
   // export let segment
 </script>
 
+      
 <header>
+<SignupForm/>
 </header>
 
 <main>
@@ -14,7 +16,6 @@
 <footer>
   <div class="container">
     <div>
-      <SignupForm/>
     </div>
     <div class="links">
       <a href="https://twitter.com/joshnuss">
