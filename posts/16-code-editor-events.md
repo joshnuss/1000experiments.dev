@@ -19,7 +19,7 @@ So I added events for when the timeline start/stops and when steps start/stop.
   />
 ```
 
-The event contains the `step` data, the event handler can use that to scroll or change the accompanying content.
+The event contains the `step` data, which the event handler can use to scroll or change the accompanying content.
 
 Here's the code:
 
