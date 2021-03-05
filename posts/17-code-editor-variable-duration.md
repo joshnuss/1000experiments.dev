@@ -6,13 +6,13 @@ permalink: code-editor-variable-duration
 tags: code-video, svelte, animation
 ---
 
-Started working on some refactorings to add more animation capability.
-Essential, I would like to be able to tween everything, including typewriter effect speed.
+Started working on some refactorings to add more animation capabilities.
+Essentially, I would like to be able to tween everything with easing, including typewriter effect speed.
 
-The steps are happeing sequentially, and each step had the same duration.
+Currently, the steps in the timeline were happening sequentially, and each step had the same duration.
 So I refactored the code to allow each step to have it's own duration.
 
-Also added the ability for a step to define a pause. Without it, each step bleads into the next and it can be difficult to follow when something finished and when it started.
+I also added the ability for a step to define a pause. Without it, each step bleads into the next and it can be difficult to follow when something finished and when it started.
 
 Here's the code:
 
