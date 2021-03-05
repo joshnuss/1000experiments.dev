@@ -5,7 +5,7 @@
       <h2>Get weekly updates</h2>
       <div class="stack">
         <div class="mc-field-group">
-          <input type="email" placeholder="you@example.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <input type="email" placeholder="you@example.com" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
         </div>
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
       </div>
