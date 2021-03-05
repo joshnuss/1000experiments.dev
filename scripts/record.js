@@ -38,7 +38,7 @@ function lastExperiment() {
   return last
 }
 
-function generate({title, experiment, tags, permalink}) {
+function generate({title, experiment, tags, permalink, assetUrl}) {
   return `---
 title: ${title}
 experiment: ${experiment}
@@ -47,25 +47,33 @@ permalink: ${permalink}
 tags: ${tags}
 ---
 
-Content here
+Here's the code:
+
+
+Here's what it looks like:
+
+${assetUrl && assetUrl.endsWith('.mp4') ? `<video controls src="${assetUrl}"/>` : `<img alt="animation" src="${assetUrl}"/>`}
 `
 }
 
 function prompt(callback) {
   read({prompt: 'title:'}, function (err, title) {
     read({prompt: 'tags:', default: ''}, function (err, tags) {
-      callback(title, tags)
+      read({prompt: 'asset url:', default: ''}, function (err, assetUrl) {
+        callback(title, tags, assetUrl)
+      })
     })
   })
 }
 
-prompt((title, tags) => {
+prompt((title, tags, assetUrl) => {
   const path = `posts/${experiment}-${permalink}.md`
   const template = generate({
     title,
     experiment,
     permalink,
-    tags
+    tags,
+    assetUrl
   })
 
   fs.writeFileSync(path, template)
