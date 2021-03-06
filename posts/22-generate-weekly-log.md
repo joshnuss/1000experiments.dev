@@ -18,8 +18,8 @@ It's pretty straightforward, but it will save me 10 minutes every week.
 const getPosts = require('./posts.js')
 
 getPosts().forEach(post => {
-  console.log(
-    `[#${post.data.experiment} - ${post.data.title}](https://1000experiments.dev/posts/${post.data.permalink})`
-  )
+  const { experiment, permalink, title } = post.data
+
+  console.log(`[#${experiment} - ${title}](https://1000experiments.dev/posts/${permalink})`)
 })
 ```
