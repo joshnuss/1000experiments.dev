@@ -3,7 +3,7 @@ title: Landing page template
 experiment: 19
 date: "2021-03-06"
 permalink: landing-page-template
-tags: marketing
+tags: marketing, svelte, landing-page
 ---
 
 Thinking about running some marketing experiments, so I starting building out a landing page template. Working on stubbing out the mobile version first.
