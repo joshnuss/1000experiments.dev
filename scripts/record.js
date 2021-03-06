@@ -1,10 +1,8 @@
 const {format} = require('date-fns')
 const fs = require('fs')
-const glob = require('glob')
-const matter = require('gray-matter')
 const read = require('read')
 const child_process = require('child_process')
-
+const getPosts = require('./posts.js')
 const experiment = lastExperiment() + 1
 const permalink = process.argv[2]
 
@@ -24,11 +22,9 @@ function openEditor(path) {
 
 function lastExperiment() {
   let last = 0
-  let content
 
-  glob.sync('posts/*.md').forEach(file => {
-    content = fs.readFileSync(file, 'utf8')
-    const experiment = matter(content).data.experiment
+  getPosts().forEach(post => {
+    const experiment = post.data.experiment
 
     if (experiment && experiment > last) {
       last = experiment
