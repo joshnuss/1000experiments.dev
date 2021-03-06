@@ -13,5 +13,7 @@ module.exports = function getPosts() {
     posts.push(post)
   })
 
+  return posts.sort((a, b) => a.data.experiment - b.data.experiment)
+
   return posts
 }
