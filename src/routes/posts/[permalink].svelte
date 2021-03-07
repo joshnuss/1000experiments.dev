@@ -40,10 +40,6 @@
 </div>
 
 <style>
-  .content {
-    font-size: 1.2rem;
-  }
-
   h1 {
     margin-top: 10px;
   }

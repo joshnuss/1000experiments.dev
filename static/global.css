@@ -58,6 +58,16 @@ pre code {
   padding: 0;
 }
 
+.content {
+  font-size: 1.2rem;
+}
+.content video, .content img {
+  max-width: calc(100vw - 2rem);
+}
+.content a {
+  overflow-wrap: break-word;
+}
+
 @media (min-width: 400px) {
   body {
     font-size: 16px;
