@@ -6,16 +6,16 @@ permalink: code-editor-typing-elasticity
 tags: code-video, svelte, animation
 ---
 
-I added support for easing functions that are elastic. Elasticity is a challenge because the cursor can move backwards, which means deletions.
+I added support for easing functions that are elastic. Elasticity is a challenge because the cursor can move backwards, which means issuing a backspace event.
 
-This one took a bit of work, and it hindsight, may not be that useful. But I still learned something important from it.
+It took a bit of work, and it hindsight, may not be that useful. But I still learned something important from it.
 
 It was hard because of 2 reasons:
 
-1. My code was hard to debug. Once I added better support for debugging (outputing data), I solved the problems quickly. It's a good reminder that when debugging gets tough, it's a signal to stop debugging and change the code to make it easier to debug. Brute force debugging never works.
-2. This codebase has become a collection of experiments integrated together. But it's important to experiment in isolation to limit the variables. That's how to go fast.
+1. **My code was hard to debug**. Once I added better support for debugging (outputing data), I solved the problems quickly. It's a good reminder that when debugging gets tough, it's a signal to stop debugging and change the code to make it easier to debug. Brute force debugging never works.
+2. **This codebase has become a set of integrated experiments**. But it's important to experiment in isolation to limit the variables. Otherwise everything slows down.
 
-Integration is an important part too, and can even be thought of as it's own experiment. But I need to be careful to keep intergration intentional.
+Integration is an key part too, and should be thought of as it's own experiment. Just need to be careful to keep intergration intentional.
 
 I will try these methods going forward and see what happens.
 
