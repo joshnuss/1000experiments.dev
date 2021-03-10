@@ -6,7 +6,7 @@ permalink: code-editor-hyperlink
 tags: code-video, svelte, animation
 ---
 
-One use case for the animated code thing is displaying it side by side with an article, course or docs. So keeping the position of the aricle in sync with the code editor (and vice versa) would be really cool.
+One use case for the animated code thing is displaying it side by side with an ancompanying article, course or docs. That means keeping the article in sync with the code editor (and vice versa).
 
 Today I explored having links that scroll the editor to a specific line and highlight it. It worked out pretty well.
 
