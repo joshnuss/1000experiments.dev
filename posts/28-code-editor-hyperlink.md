@@ -8,7 +8,7 @@ tags: code-video, svelte, animation
 
 One use case for the animated code thing is displaying it side by side with an ancompanying article, course or docs. That means keeping the article in sync with the code editor (and vice versa).
 
-Today I explored having links that scroll the editor to a specific line and highlight it. It worked out pretty well.
+Today I explored having links that scrolls the editor to a specific line and highlights it. It worked out pretty well.
 
 ## Here's the code:
 
