@@ -34,7 +34,7 @@ function lastExperiment() {
   return last
 }
 
-function generate({title, experiment, tags, permalink, assetUrl}) {
+function generate({title, experiment, tags, permalink, assetUrl, codeUrl}) {
   return `---
 title: ${title}
 experiment: ${experiment}
@@ -45,6 +45,7 @@ tags: ${tags}
 
 ## Here's the code:
 
+${codeUrl}
 
 ## Here's what it looks like:
 
@@ -56,20 +57,23 @@ function prompt(callback) {
   read({prompt: 'title:'}, function (err, title) {
     read({prompt: 'tags:', default: ''}, function (err, tags) {
       read({prompt: 'asset url:', default: ''}, function (err, assetUrl) {
-        callback(title, tags, assetUrl)
+        read({prompt: 'code url:', default: ''}, function (err, codeUrl) {
+          callback(title, tags, assetUrl, codeUrl)
+        })
       })
     })
   })
 }
 
-prompt((title, tags, assetUrl) => {
+prompt((title, tags, assetUrl, codeUrl) => {
   const path = `posts/${experiment}-${permalink}.md`
   const template = generate({
     title,
     experiment,
     permalink,
     tags,
-    assetUrl
+    assetUrl,
+    codeUrl
   })
 
   fs.writeFileSync(path, template)
