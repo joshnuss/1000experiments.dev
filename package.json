@@ -1,6 +1,7 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "1000experiments.dev",
+  "description": "",
+  "license": "UNLICENSED",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
