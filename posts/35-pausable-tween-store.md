@@ -10,7 +10,7 @@ Earlier today, I did an experiment where I needed to [pause a tweened store](/po
 
 Figured it could be turned into a reusable store, so I explored how it might work [in a REPL](https://svelte.dev/repl/abce342ed248428ab6d67d4ee64033b9?version=3.35.0).
 
-Using the standard `tweened()` store, I was able to attach some extra functions, like `.pause()`, `.continue()` etc. It's very similar to how I created my [local storage store](https://github.com/joshnuss/svelte-local-storage-store)) 
+Using the standard `tweened()` store, I was able to attach some extra functions, like `.pause()`, `.continue()` etc. It's very similar to how I created my [local storage store](https://github.com/joshnuss/svelte-local-storage-store).
 
 ```javascript
 // works just like svelte's `tweened` store
