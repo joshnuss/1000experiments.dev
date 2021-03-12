@@ -67,6 +67,9 @@ pre code {
 .content a {
   overflow-wrap: break-word;
 }
+.content pre {
+  margin-bottom: 1rem !important;
+}
 
 @media (min-width: 400px) {
   body {
