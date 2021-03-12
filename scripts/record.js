@@ -43,11 +43,11 @@ permalink: ${permalink}
 tags: ${tags}
 ---
 
-## Here's the code:
+## Code
 
 ${codeUrl}
 
-## Here's what it looks like:
+## Demo
 
 ${assetUrl && assetUrl.endsWith('.mp4') ? `<video controls src="${assetUrl}"/>` : `<img alt="animation" src="${assetUrl}"/>`}
 `

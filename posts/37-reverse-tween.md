@@ -30,10 +30,10 @@ store.reverse = async () => {
 }
 ```
 
-## Here's the code:
+## Code
 
 https://svelte.dev/repl/21e75022cc7a4acc95678447141fbee8?version=3.35.0
 
-## Here's what it looks like:
+## Demo
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1615508486/1000experiments.dev/tween-reverse_xfvl8o.mp4"/>
