@@ -75,4 +75,7 @@ pre code {
   body {
     font-size: 16px;
   }
+  .content video, .content img {
+    max-width: calc(50vw - 2rem);
+  }
 }
