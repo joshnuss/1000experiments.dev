@@ -13,7 +13,7 @@
     "test": "run-p --race dev cy:run",
     "lint": "eslint . --ext .js,.svelte",
     "record": "node scripts/record.js",
-    "cloudinary": "google-chrome https://cloudinary.com/console/c-f4ea318f52c2ee22786bc298d1d463/media_library/folders/ee5be0920a10f75e822b3580b46e141f",
+    "upload": "google-chrome https://cloudinary.com/console/c-f4ea318f52c2ee22786bc298d1d463/media_library/folders/ee5be0920a10f75e822b3580b46e141f",
     "log": "node scripts/log.js",
     "deploy": "vercel deploy --prod"
   },

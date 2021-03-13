@@ -12,7 +12,7 @@ Every day I do 3 experiments and record them here.
 
 Generate a post template for an experiment.
 
-### yarn cloudinary
+### yarn upload
 
 Open Cloudinary folder.
 
