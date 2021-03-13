@@ -4,6 +4,8 @@ import Prism from 'prismjs'
 import 'prism-themes/themes/prism-vsc-dark-plus.css'
 
 // add more languages here
+import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-yaml'
 import 'prismjs/components/prism-javascript'
 import 'prismjs/components/prism-css'
 
