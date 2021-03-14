@@ -3,7 +3,7 @@ title: Extract a CSS var with VIM
 experiment: 24
 date: "2021-03-06"
 permalink: vim-extract-css-var
-tags: vim
+tags: vim, css
 ---
 
 To make a site responsive, CSS rules are often turned into variables.

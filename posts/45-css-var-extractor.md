@@ -17,6 +17,7 @@ It can event be taken further:
 - If a value `red` is being extracted to a var, it could replace all CSS properties that use `red` with new var.
 - If the var is renamed, it could rename it everywhere.
 - Would make it easy to setup vars that change based on different breakpoints.
+- It could find the most used property values. ie if you used `1px` a ton of times, it could suggest it be a var.
 - Could be changed to run as a desktop app. With access to the filesystem, it ould edit all the css files in a project at once, add show how it would look under different viewpoint/breakpoint sizes.
 
 ## Code
