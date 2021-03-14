@@ -1,7 +1,15 @@
+const marked = require('marked')
 const getPosts = require('./posts.js')
+const since = process.argv[2]
+
+let template = ''
 
 getPosts().forEach(post => {
   const { experiment, permalink, title } = post.data
 
-  console.log(`- [#${experiment} - ${title}](https://1000experiments.dev/posts/${permalink})`)
+  if (experiment <= since) return
+
+  template += `- [#${experiment} - ${title}](https://1000experiments.dev/posts/${permalink})\n`
 })
+
+console.log(marked(template))
