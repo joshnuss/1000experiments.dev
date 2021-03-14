@@ -1,7 +1,7 @@
 import Prism from 'prismjs'
 
 // change to adjust theme
-import 'prism-themes/themes/prism-vsc-dark-plus.css'
+import 'prism-themes/themes/prism-material-light.css'
 
 // add more languages here
 import 'prismjs/components/prism-bash'
