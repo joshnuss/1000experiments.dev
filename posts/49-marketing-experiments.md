@@ -23,4 +23,4 @@ So what are some marketing experiments I can do?
 
 ## Formula
 
-The formula should be easy. Find something that takes a lot of time (time is money), make it take no time at all, find the people (audience) spending time doing it the hard way. If the price of the offering is 10x less that what their time costs, it should be a no-brainer.
+The formula should be easy. Find something that takes a lot of time (time is money), and make it take no time at all. Then find the people (audience) spending time doing it the hard way. If the price of the offering is 10x less that what their time costs, it should be a no-brainer.
