@@ -4,6 +4,7 @@ import Prism from 'prismjs'
 import 'prism-themes/themes/prism-material-light.css'
 
 // add more languages here
+import 'prismjs/components/prism-sql'
 import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-yaml'
 import 'prismjs/components/prism-javascript'
