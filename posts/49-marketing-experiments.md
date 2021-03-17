@@ -8,7 +8,7 @@ tags: marketing
 
 This is more of a thought experiment.
 
-I don't like the old style of sales and marketing, where folks are pushed, tricked and spammed into buying things. Instead, I want to help people so much that they want to pay me. No arm twisting, only helping.
+I don't like the old style of sales and marketing, where folks are pushed, tricked and spammed into buying things. Instead, I like the good kind of marketing/selling, where you help folks so much until they want to pay you. No arm twisting, only helping.
 
 ## Experiments
 
