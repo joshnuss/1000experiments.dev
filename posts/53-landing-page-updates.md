@@ -1,5 +1,5 @@
 ---
-title: Langing page updates
+title: Landing page updates
 experiment: 53
 date: "2021-03-17"
 permalink: landing-page-updates
