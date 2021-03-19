@@ -13,6 +13,7 @@ Been thinking about what makes a good landing page. I haven't had a successful o
 3. Just having a signup form. People need a reason to sign up. ie something compelling like an offer, freebie or discount.
 4. Not being up front about the price. Better to mention what the price will be. That way you know they aren't signing up hoping for a free thing.
 5. Not having referrals or social proof.
+6. CTA being to low (below the fold).
 
 ## Landing Page Questionaire
 
