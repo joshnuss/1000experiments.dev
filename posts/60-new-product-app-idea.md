@@ -8,7 +8,7 @@ tags: e-commerce, idea
 
 As more and more of e-commerce becomes systematized, the oppurtunities to systemitize move outwards. The cart has become a solved problem, but there are many problems around e-commerce that still need solving.
 
-It's just a matter of finding where people spend time,  and making those areas easier.
+It's just a matter of finding where people spend time, and making those areas easier.
 
 One place I've been thinking about is around product creation. Making it easier to add a new product to the catalog.
 
