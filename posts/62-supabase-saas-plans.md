@@ -12,6 +12,10 @@ I made the hairbrained mistake of swapping the parameters to supabase's `createC
 
 It's looking really nice though, I copied the plan section from the sales page for the Refactoring UI book. Pretty shmick.
 
+And it's really nice to have supabase working on the server side and the client side. For example, the pricing page can render either SSR or CSR.
+
+Server-side access to supabase will come in handy when we need to talk to external services like Stripe. So stay tuned.
+
 ## Demo
 
 <img alt="screenshot" src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1616228690/1000experiments.dev/Screenshot_from_2021-03-20_04-23-48_pefmil.png"/>
