@@ -1,5 +1,5 @@
 ---
-title: SaaS template: Plans and Authentication
+title: "SaaS template: Plans and Authentication"
 experiment: 62
 date: "2021-03-20"
 permalink: supabase-saas-plans
