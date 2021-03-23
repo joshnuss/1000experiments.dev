@@ -12,7 +12,7 @@ The bucket window needs to scale from small to big. For example, someone that ne
 
 Thinking about it, maybe it's a calculus problem? ie the number of notifications is a series of a points over time, the speed is the rate of change since the last point, and the acceleration is the rate the speed has changed.
 
-Then it's just a metter of mixing those 3 numbers together to product an appropriate window duration. Also, there will always a maximum window (ie 30 minutes), so it the window of data to compute speed and acceleration for is bounded.
+Then it's just a matter of mixing those 3 numbers together to product an appropriate window duration. Also, there will always a maximum window (ie 30 minutes), so it the window of data to compute speed and acceleration for is bounded.
 
 So I set out to visualize the problem more, and ended up building an svg that displays the points over time. My calculus knowledge is super rusty, but this seemed to work.
 
