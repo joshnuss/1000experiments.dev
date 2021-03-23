@@ -1,5 +1,5 @@
 ---
-title: Rollup with Laky bucket
+title: Rollup with leaky bucket
 experiment: 71
 date: "2021-03-22"
 permalink: rollup-with-leaky-bucket
