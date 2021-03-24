@@ -9,6 +9,7 @@ import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-yaml'
 import 'prismjs/components/prism-javascript'
 import 'prismjs/components/prism-css'
+import 'prismjs/components/prism-elixir'
 
 export default function highlight(node) {
   for (const code of node.querySelectorAll('code')) {
