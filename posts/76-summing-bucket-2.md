@@ -1,5 +1,5 @@
 ---
-title: Summing bucket #2
+title: "Summing bucket #2"
 experiment: 76
 date: "2021-03-24"
 permalink: summing-bucket-2
