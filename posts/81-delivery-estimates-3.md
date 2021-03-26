@@ -10,11 +10,11 @@ Continuing on the [data model for delivery estimates](/posts/delivery-estimates-
 
 There are several components that go into it:
 
-- **Cutoff times**: the warehouse has time it needs to receive an order by to guarantee it goes out on the same day. Order placed after the cuttof times go out on the following business day. These times can be different depending on each weekday.
-- **Weekday schedule of warehouse**: Each warehouse can have it's own weekday schedule, ie one may close on Saturday and Sunday, while another is open 7 days a week.
-- **Delivery schedule of carrier**: Some carriers deliver 7 days a week, others like USPS doesn't delivery on Saturday.
-- **Holiday schedule of the carrier**: Each carrier can have days where they are closed. The schedule can be different across each country/state/province.
-- **Holiday schedule of the warehouse**: The warehouse may have their own holidays, for example a warehouse may be closed for Jewish holidays like Rosh Hashana
+- **Warehouse's cutoff times**: the warehouse has time it needs to receive an order by to guarantee it goes out on the same day. Order placed after the cuttof times go out on the following business day. These times can be different depending on each weekday.
+- **Warehouse's weekly schedule**: Each warehouse can have it's own weekday schedule, ie one may close on Saturday and Sunday, while another is open 7 days a week.
+- **Carrier's delivery schedule**: Some carriers deliver 7 days a week, others like USPS doesn't delivery on Saturday.
+- **Carrier's holiday schedule**: Each carrier can have days where they are closed. The schedule can be different across each country/state/province.
+- **Warehouse's holiday schedule**: The warehouse may have their own holidays, for example a warehouse may be closed for Jewish holidays like Rosh Hashana
 
 I think the data model now has all the components needed to estimate the delivery.
 
