@@ -40,4 +40,4 @@ limit 1
 
 That returns: `West Springfield, 16443`, which is correct, it's on the opposite side of the state, on the north western border of Ohio.
 
-NOTE: the order of points with PstGIS is longitude,latitude, NOT latitude,longitude. (That's 4 hours I wont get back)
+**NOTE**: the order of points with PostGIS is longitude,latitude, NOT latitude,longitude. (That's 4 hours I wont get back)
