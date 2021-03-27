@@ -1,5 +1,5 @@
 ---
-title: Delivery estimates - Part 1
+title: "Delivery estimates: db schema"
 experiment: 79
 date: "2021-03-26"
 permalink: delivery-estimates

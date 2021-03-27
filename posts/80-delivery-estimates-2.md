@@ -1,5 +1,5 @@
 ---
-title: Delivery estimates - Part 2
+title: "Delivery estimates: postal zones"
 experiment: 80
 date: "2021-03-26"
 permalink: delivery-estimates-2

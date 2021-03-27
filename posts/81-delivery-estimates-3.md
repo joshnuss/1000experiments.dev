@@ -1,5 +1,5 @@
 ---
-title: Delivery estimates - Part 3
+title: "Delivery estimates: scheduling"
 experiment: 81
 date: "2021-03-26"
 permalink: delivery-estimates-3
