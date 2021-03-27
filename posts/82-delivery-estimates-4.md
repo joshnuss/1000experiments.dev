@@ -40,4 +40,13 @@ limit 1
 
 That returns: `West Springfield, 16443`, which is correct, it's on the opposite side of the state, on the north western border of Ohio.
 
+The 2 queries can be merged together to run for all states in one shot:
+
+```sql
+select s.code, s.name,
+(select p.code from postal_codes as p where s.id = p.subdivision_id order by st_distance('POINT(-75.0315724 39.9067637)', p.geog) limit 1) closest_zip,
+(select p.code from postal_codes as p where s.id = p.subdivision_id order by st_distance('POINT(-75.0315724 39.9067637)', p.geog) desc limit 1) farthest_zip
+from subdivisions as s
+```
+
 **NOTE**: the order of points with PostGIS is longitude,latitude, NOT latitude,longitude. (That's 4 hours I wont get back)
