@@ -1,5 +1,5 @@
 ---
-title: Delivery estimates: warehouse scheduling ui
+title: "Delivery estimates: warehouse scheduling UI"
 experiment: 86
 date: "2021-03-28"
 permalink: delivery-estimates-8
