@@ -8,7 +8,7 @@ tags: e-commerce
 
 What makes a good headline?
 
-I want to update the headline on my site [CarrierWave][https://getcarrierwave.com], so I figured it's worth an experiment.
+I want to update the headline on my site [CarrierWave](https://getcarrierwave.com), so I figured it's worth an experiment.
 
 My current headline is "Monitor your outbound shipments". It describes what it does, but not the reason why that's important.
 
