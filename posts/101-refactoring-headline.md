@@ -10,9 +10,9 @@ What makes a good headline?
 
 I want to update the headline on my site [CarrierWave](https://getcarrierwave.com), so I figured it's worth an experiment.
 
-My current headline is "Monitor your outbound shipments". It describes what it does, but not the reason why that's important.
+The current headline is "Monitor your outbound shipments" which describes what it does, but not the reason why that's important.
 
-There seems to be a few common ways to specify a headline:
+There seems to be few common ways to specify a headline:
 
 - What: "A monitoring solution for your shipments"
 - How: "We monitor the tracking data for you"
