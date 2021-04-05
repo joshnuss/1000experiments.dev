@@ -66,7 +66,7 @@ export function clear() {
 }
 ```
 
-## Add to cart button
+## Button definition
 
 The `<add-button>` is very similar the `<buy-button>` except it uses the cart:
 
