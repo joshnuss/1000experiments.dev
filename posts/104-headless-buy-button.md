@@ -3,7 +3,7 @@ title: Headless buy button
 experiment: 104
 date: "2021-04-05"
 permalink: headless-buy-button
-tags: e-commerce
+tags: e-commerce, headless
 ---
 
 The trend in e-commerce is moving towards headless. Folks want to use modern stacks like Svelte & Vue instead of relying on the clunkier and dated options provided by site builders.

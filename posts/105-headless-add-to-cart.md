@@ -3,7 +3,7 @@ title: Headless add to cart button
 experiment: 105
 date: "2021-04-05"
 permalink: headless-add-to-cart
-tags: e-commerce
+tags: e-commerce, headless
 ---
 
 In the previous experiment, I created a [`<buy-button>` web component](/posts/headless-buy-button). In this experiment, I add an "add to cart" button as well.
