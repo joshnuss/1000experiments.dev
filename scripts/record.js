@@ -36,7 +36,7 @@ function lastExperiment() {
 
 function generate({title, experiment, tags, permalink, assetUrl, codeUrl}) {
   return `---
-title: ${title}
+title: ${title.includes(':') ? `"${title}"` : title}
 experiment: ${experiment}
 date: "${format(new Date(), 'yyyy-MM-dd')}"
 permalink: ${permalink}
