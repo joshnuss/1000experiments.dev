@@ -1,5 +1,5 @@
 ---
-title: Supacart: a cart with supabase + svelte
+title: "Supacart: a cart with supabase + svelte"
 experiment: 107
 date: "2021-04-07"
 permalink: supabase-svelte-cart
