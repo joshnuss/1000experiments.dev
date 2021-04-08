@@ -6,7 +6,7 @@ permalink: svelte-kit-supabase-preset
 tags: svelte, supabase
 ---
 
-There's a handy tool for `svelte-kit` called `svelte-add`, it can quickly configure `svelte-kit` to do different things. ie setup tailwind, bulma, etc
+There's a handy tool for [`svelte-kit`](https://kit.svelte.dev) called [`svelte-add`](https://www.npmjs.com/package/svelte-add), which can quickly configure `svelte-kit` to do different things with presets. ie setup tailwind, bulma, etc
 
 Figured it would be cool to support supabase too. So I created a project to that.
 
