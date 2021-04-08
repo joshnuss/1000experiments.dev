@@ -67,8 +67,6 @@ The index screen shows a list of products and allows the user to remove products
   export async function load() {
     const products = await db.products.all()
 
-    console.log(products)
-
     return {
       props: { products }
     }
