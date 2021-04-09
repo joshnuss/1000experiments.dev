@@ -1,5 +1,5 @@
 ---
-title: Svelte-kit supabase preset
+title: "Svelte-kit supabase preset: boilerplate"
 experiment: 113
 date: "2021-04-08"
 permalink: svelte-kit-supabase-preset-2
