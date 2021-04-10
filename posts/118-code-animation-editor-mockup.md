@@ -12,6 +12,6 @@ The timeline view displays multiple elements (screens), each having it's own sch
 Above the timeline, there are buttons to play/pause, fast forward and rewind. There is also a zooming bar (progress bar looking thing on right side).
 In the upper right corner, there are actions to share, render, and adjust settings for the animation.
 
-## Demo
+## Mockup
 
 <img alt="animation" src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1618034171/1000experiments.dev/code-animation-timeline-mockup_tiszpl.png"/>
