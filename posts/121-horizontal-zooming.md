@@ -76,7 +76,7 @@ function keydown(event) {
 }
 ```
 
-## Wrapping
+## Text wrapping
 
 One final touch was handling word wrapping. When the zoom level is very high, the text is chopped and `...` is added.
 It's great that there is a pure css solution for that. In the old days that would have required code.
