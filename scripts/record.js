@@ -50,6 +50,8 @@ ${codeUrl}
 ## Demo
 
 ${assetUrl && assetUrl.endsWith('.mp4') ? `<video controls src="${assetUrl}"/>` : `<img alt="animation" src="${assetUrl}"/>`}
+
+## Notes
 `
 }
 
