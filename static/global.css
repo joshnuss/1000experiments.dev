@@ -28,7 +28,8 @@ h1 {
 
 a {
   color: inherit;
-  text-decoration-color: #ddd;
+  text-decoration-color: #afe6e8;
+  text-decoration-thickness: 3px;
 }
 
 .experiment {
