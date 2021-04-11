@@ -47,4 +47,8 @@
   :global(code) {
     font-size: 1.1rem !important;
   }
+
+  .author a {
+    text-decoration: none;
+  }
 </style>
