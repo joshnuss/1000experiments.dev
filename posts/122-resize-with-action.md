@@ -6,7 +6,7 @@ permalink: resize-with-action
 tags: svelte, code-video
 ---
 
-One component I need for the [code animation project](/tag/code-video) is a way to resize elements. 
+One component I need for the [code animation project](/tag/code-video) is a way to resize elements.
 
 In this experiment, I look at building a generic component using a Svelte Active.
 
