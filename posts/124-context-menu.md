@@ -44,3 +44,4 @@ https://svelte.dev/repl/697820c1fb92462daea82c2b26244ecd?version=3.37.0
 ## Notes
 
 - Alternatively, it could be implemented as an action.
+- It should handle placement better. It can't assume there is always space under the click point. For example, if opened near the bottom of the back, the menu position should use `bottom: event.pageY` instead of `top: event.pageY`
