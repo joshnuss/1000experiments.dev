@@ -1,5 +1,5 @@
 ---
-title: Resize with Svelte Action
+title: "Code animation: Resizing with Svelte actions"
 experiment: 122
 date: "2021-04-12"
 permalink: resize-with-action
