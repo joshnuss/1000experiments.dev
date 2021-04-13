@@ -15,7 +15,3 @@ https://svelte.dev/repl/5485658309a4467a809dac71708d947e?version=3.37.0
 ## Demo
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1618292343/1000experiments.dev/timeline-duration-display_hbixvn.mp4"/>
-
-## Notes
-
--
