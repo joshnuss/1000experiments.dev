@@ -1,5 +1,5 @@
 ---
-title: "Code animation: command store"
+title: Svelte command store
 experiment: 128
 date: "2021-04-14"
 permalink: command-store
