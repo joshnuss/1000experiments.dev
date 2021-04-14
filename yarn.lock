@@ -834,10 +834,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@jackfranklin/rollup-plugin-markdown@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@jackfranklin/rollup-plugin-markdown/-/rollup-plugin-markdown-0.2.0.tgz#d7027777573924fdbe2c6afc238bc15ec907219b"
-  integrity sha512-dL4gbVgzeUompH/txuzfUjsvmRKVnEzbLprM+W4FzvernlfZ1olwxxIfDX+wX3awbbB4uuHCmlWeiTL27IVYmQ==
+"@jackfranklin/rollup-plugin-markdown@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@jackfranklin/rollup-plugin-markdown/-/rollup-plugin-markdown-0.3.0.tgz#3b09ce9ff257c0badb2cf68f889aec477741fac0"
+  integrity sha512-N3ZjFUhK+Hvcc3AZrOlLtZJrVVQ1mtEZhd8M6X6avmDfe0IyUrcFBY40U8+6HqaYjqbelHQiu51jrS6GiOBcHA==
   dependencies:
     gray-matter "^4.0.2"
     rollup-pluginutils "^2.8.2"
