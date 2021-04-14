@@ -8,7 +8,7 @@ tags: code-video, svelte
 
 When UIs have many options, it's a good idea to provide a way to undo the last change. Just in case a mistake is made.
 
-From a software design perspective, anytim you need undo/redo means you want to reach for the Command Pattern. With the command pattern, we don't just mutate data directly, we track a log of each change. The log gives us the ability to replay changes later.
+From a software design perspective, undo/redo always means using the [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern). With the command pattern, we don't just mutate data directly, we track a log of each change. The gives us the ability to replay changes later.
 
 ## Command store API
 
