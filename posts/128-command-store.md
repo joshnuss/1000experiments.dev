@@ -8,27 +8,25 @@ tags: code-video, svelte
 
 When UIs have many options, it's a good idea to provide a way to undo the last change. Just in case a mistake is made.
 
-From a software design perspective, undo/redo means using the Command Pattern. With the command pattern, we don't just mutate data directly, we track a log of each change. The log gives us the ability to undo changes later. It's like a log of mutations that we can replay in either direction.
+From a software design perspective, anytim you need undo/redo means you want to reach for the Command Pattern. With the command pattern, we don't just mutate data directly, we track a log of each change. The log gives us the ability to replay changes later.
 
 ## Command store API
 
-The default writable store API, provides `.set()` and `.update()` to mutate the store.
+The default `writable` store API provides `.set()` and `.update()` to mutate the store, but we can't recover the state after it's applied:
 
 ```javascript
 const store = writable(initialValue)
 
-// mutation store
+// mutate store
 store.set(state1)
 
-// mutation store again
-store.set(state2)
+// mutate store again
+store.update($store => state2)
 
 // state1 is now lost and we can't recover it
 ```
 
-That won't work for a command store, because after we call `.set()` or `.update()`, the previous value is lost.
-
-We need a different interface for our store, one where we won't allow direct mutation. Our store will require a "command" to execute, and the store will run the command, mutate the state **and** persist the command onto a stack (aka the log).
+Our store will need a bit more information to apply a change.
 
 The API would look like this:
 
@@ -38,6 +36,7 @@ The API would look like this:
 const store = commandStore(initialValue, commandList)
 
 // apply a command by passing the command name
+// it logs the command and mutates the state
 store.execute(commandName, args)
 
 // undo the last command
@@ -49,7 +48,7 @@ store.redo()
 
 ## Commands
 
-The list of available commands will be passed to the store when it is defined. Each command is just an `object` that has two functions: `forward()` and `reverse()`.
+When the store is defined, we'll pass a list of available commands. Each command is just an `object` that has two functions: `forward()` and `reverse()`.
 
 ```javascript
 const store = commandStore(initialValue, {
@@ -81,15 +80,16 @@ const store = commandStore(initialValue, {
 
 ## Implementing the command store
 
-The command store will piggy-back off Svelte's `writable()` store. It provides 3 functions:
+The command store piggy-backs off Svelte's `writable()` store, but it provides a different API:
 
-- `commandStore(initialValue, commands)` - creates a command store, requires and initial value and a list of command handlers.
-- `commandStore.execute(commandName, args)` - executes a command, `args` is optional.
-- `commandStore.undo()` - undo the command before the current pointer.
-- `commandStore.redo()` - redo the command after the current pointer.
-- `$commandStore.value` - current value of the store
-- `$commandStore.stack` - list of mutations/commands that were executed
-- `$commandStore.pointer` - the last executed position of the stack
+- `commandStore.subscribe(cb)`
+- `commandStore(initialValue, commands)` - Creates a command store. Requires and initial value and a list of command handlers.
+- `commandStore.execute(commandName, args)` - Executes a command, `args` is optional.
+- `commandStore.undo()` - Undo the command before the current pointer.
+- `commandStore.redo()` - Redo the command after the current pointer.
+- `$commandStore.value` - Current value of the store.
+- `$commandStore.stack` - List of mutations/commands that were executed.
+- `$commandStore.pointer` - Position of the last executed command in the stack.
 
 Here's what the code looks like:
 
@@ -106,7 +106,8 @@ export default function commandStore(initialValue, commands) {
     pointer: 0 // the current position of stack
   })
 
-  // execute applies the command in a forward direction and pushes it onto the stack
+  // execute applies the command in a forward direction
+  // and pushes it onto the stack
   store.execute = (type, args) => {
     store.update(({value, pointer, stack}) => {
       // find the command
@@ -143,6 +144,7 @@ export default function commandStore(initialValue, commands) {
     })
   }
 
+  // redo re-runs a command in the forward direction
   store.redo = () => {
     store.update($store => {
       const {value, pointer, stack} = $store
