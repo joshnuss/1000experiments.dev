@@ -8,11 +8,11 @@ tags: code-video, svelte
 
 When UIs have many options, it's a good idea to provide a way to undo the last change. Just in case a mistake is made.
 
-From a software design perspective, undo/redo always means using the [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern). With the command pattern, we don't just mutate data directly, we track a log of each change. The gives us the ability to replay changes later.
+From a software design perspective, undo/redo always means using the [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern). With the command pattern, we don't just mutate data directly, we track a log of each change. That gives us the ability to replay changes later.
 
 ## Command store API
 
-The default `writable` store API provides `.set()` and `.update()` to mutate the store, but we can't recover the state after it's applied:
+Svelte's default `writable` store provides `.set()` and `.update()` to mutate the store:
 
 ```javascript
 const store = writable(initialValue)
@@ -26,7 +26,9 @@ store.update($store => state2)
 // state1 is now lost and we can't recover it
 ```
 
-Our store will need a bit more information to apply a change.
+But then we lose the previous state.
+
+Our store will need a bit more information, so that it can create a log that it can recover from.
 
 The API would look like this:
 
