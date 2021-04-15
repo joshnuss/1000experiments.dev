@@ -4,6 +4,8 @@
 yarn-error.log
 /cypress/screenshots/
 /__sapper__/
+/static/images/*.mp3
+/static/images/*.mp4
 
 .now
 .vercel
