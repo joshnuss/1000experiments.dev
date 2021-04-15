@@ -10,7 +10,7 @@ Yesterday I figured out what components I need to make the [property grid UI](/p
 
 I implemented some of them:
 
-## `<Section>` component
+## Section component
 
 ```html
 <script>
@@ -24,7 +24,7 @@ I implemented some of them:
 </section>
 ```
 
-## `<Fieldset>` component
+## Fieldset component
 
 Supports vertical and horizontal orientation.
 
@@ -38,7 +38,7 @@ Supports vertical and horizontal orientation.
 </div>
 ```
 
-## `<Field>` component
+## Field component
 
 Supports vertical and horizontal orientation.
 
@@ -56,7 +56,7 @@ Supports vertical and horizontal orientation.
 </div>
 ```
 
-## `<TextField>` component
+## TextField component
 
 Supports numbers or text inputs at the moment. Reuses the `<Field>` component.
 

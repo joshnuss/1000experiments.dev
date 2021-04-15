@@ -19,7 +19,7 @@ We define 2 stores, effectively duplicating the data:
 
 ```html
 let store = writable(initialstate)
-let commandstore = commandstore(initialstate, commands)
+let commandStore = commandStore(initialstate, commands)
 ```
 
 And then our inputs bind directly to the "live" store:
@@ -28,7 +28,7 @@ And then our inputs bind directly to the "live" store:
 <input type="color" bind:value={$store.settings.background} on:blur={save}/>
 ```
 
-The `save()` function is only called after we leave the field, that avoid creating a command on each key press:
+The `save()` function is only called after we leave the field, that avoids creating a command on each key press:
 
 ```javascript
 function save() {
