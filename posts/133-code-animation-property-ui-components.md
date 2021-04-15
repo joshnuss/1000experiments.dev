@@ -91,7 +91,7 @@ When there are many components that are used together, it's nice to be able to i
 import { Section, Fieldset, TextField } from '$/lib/components/properties'
 ```
 
-So I like to defin an index file to forward export all the components:
+So I like to define an index file to forward export all the components:
 
 ```javascript
 // properties.js
