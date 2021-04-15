@@ -14,13 +14,13 @@ I implemented some of them:
 
 ```html
 <script>
-	export let title = null
+  export let title = null
 </script>
 
 <section>
-	{#if title}<h4>{title}</h4>{/if}
+  {#if title}<h4>{title}</h4>{/if}
 
-	<slot/>
+  <slot/>
 </section>
 ```
 
@@ -30,11 +30,11 @@ Supports vertical and horizontal orientation.
 
 ```html
 <script>
-	export let orientation = "vertical"
+  export let orientation = "vertical"
 </script>
 
 <div class="container" class:vertical={orientation == 'vertical'} class:horizontal={orientation == 'horizontal'}>
-	<slot/>
+  <slot/>
 </div>
 ```
 
@@ -44,15 +44,15 @@ Supports vertical and horizontal orientation.
 
 ```html
 <script>
-	export let label = null
-	let forControl = null
-	export { forControl as for }
-	export let orientation = "vertical"
+  export let label = null
+  let forControl = null
+  export { forControl as for }
+  export let orientation = "vertical"
 </script>
 
 <div class="field" class:vertical={orientation == 'vertical'} class:horizontal={orientation == 'horizontal'} >
-	{#if label}<label for={forControl}>{label}</label>{/if}
-	<slot/>
+  {#if label}<label for={forControl}>{label}</label>{/if}
+  <slot/>
 </div>
 ```
 
@@ -62,24 +62,24 @@ Supports numbers or text inputs at the moment. Reuses the `<Field>` component.
 
 ```html
 <script>
-	import Field from './Field.svelte'
+  import Field from './Field.svelte'
 
-	export let orientation = 'vertical'
-	export let label = null
-	export let name
-	export let value
-	export let type = "text"
+  export let orientation = 'vertical'
+  export let label = null
+  export let name
+  export let value
+  export let type = "text"
 
-	export let min = null
-	export let max = null
+  export let min = null
+  export let max = null
 </script>
 
 <Field {label} {orientation} for={name}>
-	{#if type == 'text'}
-		<input {name} bind:value/>
-	{:else if type == 'number'}
-		<input {name} bind:value type="number" {min} {max}/>
-	{/if}
+  {#if type == 'text'}
+    <input {name} bind:value/>
+  {:else if type == 'number'}
+    <input {name} bind:value type="number" {min} {max}/>
+  {/if}
 </Field>
 ```
 
