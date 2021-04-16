@@ -1,5 +1,5 @@
 ---
-title: "Code animation: Property UI components - I"
+title: "Code animation: Property UI components 1"
 experiment: 133
 date: "2021-04-15"
 permalink: code-animation-property-ui-components
