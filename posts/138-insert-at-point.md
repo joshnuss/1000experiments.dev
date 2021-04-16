@@ -1,5 +1,5 @@
 ---
-title: "Code animation: insert at point"
+title: "Code animation: Insert at point"
 experiment: 138
 date: "2021-04-16"
 permalink: insert-at-point

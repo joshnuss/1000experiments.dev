@@ -1,5 +1,5 @@
 ---
-title: "Code animation: selection store"
+title: "Code animation: Selection store"
 experiment: 137
 date: "2021-04-16"
 permalink: selection-store
