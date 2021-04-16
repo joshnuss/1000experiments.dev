@@ -3,7 +3,7 @@ title: "Code animation: Property UI components 3"
 experiment: 136
 date: "2021-04-16"
 permalink: code-animation-property-ui-components-3
-tags: undefined
+tags: svelte, code-video
 ---
 
 [Continuing](/posts/code-animation-property-ui-components) to build out controls for the [property grid](/posts/property-ui-dsl).
