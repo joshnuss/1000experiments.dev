@@ -12,9 +12,9 @@ They initiate the process by moving their mouse to a point in the timeline, and 
 
 ## Implementation
 
-The whole thing works by capturing `mouseover` to get the current point. When the right-click happens - before showing the context menu - the last point is captured. This is because the user will continue to use their mouse, to navigate thru the context menu, and we don't want those mouse movements effecting the insertion point.
+The whole thing works by capturing the `mouseover` event to get the current point. When the right-click happens - before showing the context menu - the last point is captured. This is needed because the user will continue to use their mouse to navigate thru the context menu, and we don't want those movements impacting the insertion point.
 
-Once they choose a menu option, an event is fired called `on:add`, which the parent handles and adds an event to the list:
+Once the menu option is chosen, an event is fired called `on:add`, which the parent handles to add an event to the list:
 
 ```html
 <script>
