@@ -28,8 +28,7 @@ const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_PRIVATE_KEY)
 
 // handle POST /cancel
 export async function post(req) {
-  // verify JWT
-  // probably need to change this to contact GoTrue to ensure accessToken is active
+  // ensure access token is real
   const token = jwt.verify(req.body.accessToken, env.SUPABASE_JWT_SECRET)
 
   // get user from supabase
