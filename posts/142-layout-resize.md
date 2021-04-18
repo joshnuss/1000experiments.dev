@@ -135,7 +135,3 @@ https://svelte.dev/repl/2522dd572cf946e2b988d98975001801?version=3.37.0
 ## Demo
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1618739826/1000experiments.dev/layout-resize_macasj.mp4"/>
-
-## Notes
-
--
