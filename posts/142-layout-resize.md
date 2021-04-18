@@ -17,6 +17,7 @@ The technique for resizing is the same for both vertical and horizontal resizing
 It assumes that the initial value of `width` is hardcoded.
 
 ```html
+<!-- VSplitter.svelte -->
 <script>
   export let height = 0
   export let width
@@ -73,6 +74,7 @@ It assumes that the initial value of `height` is hardcoded.
 Nearly identical to the vertical splitter, just with `height`/`width` and `x`/`y` swapped.
 
 ```html
+<!-- HSplitter.svelte -->
 <script>
   export let width = 0
   export let height
