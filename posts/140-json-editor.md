@@ -27,13 +27,13 @@ Also, I prefer to use [`json5`](http://npmjs.com/package/json5) instead of the b
   import { document } from '$lib/document'
 
   export let code
-  
+
   let error
 
   $: {
     // parse JSON and capture errors
     try {
-      $document = JSON5.parse(code) 
+      $document = JSON5.parse(code)
       error = null
     } catch (e) {
       // capture error for display
