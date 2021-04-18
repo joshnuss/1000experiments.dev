@@ -6,12 +6,12 @@ permalink: json-editor
 tags: svelte, code-video
 ---
 
-Before I start building out the timeline view for the code animation project, it wold be handy to have a JSON editor that I can use to edit the underlying document.
-It makes it easier to debug different scenarios by editing the JSON or copying and pasting in examples.
+Before I start building out the timeline view for the code animation project, it would be handy to have a JSON editor.
+That would make it easier to debug different scenarios by editing the document in a JSON format or by copying and pasting in examples.
 
 ## Editor
 
-The JSON editor is just another use of [codemirror](https://codemirror.net) where the code is parsed and data bound in realtime.
+The JSON editor is just another use of [codemirror](https://codemirror.net), where the code is parsed and data bound in realtime.
 
 The only hitch is that when the JSON changes, the file needs to get rebuilt, and sometimes there will be errors. So it needs to show those errors.
 
