@@ -53,6 +53,7 @@ All events share this properties:
 - `type`: the type of the event. Can be one of `insert`, `append`, `delete`, `scroll`, `select`
 - `label`: the label of the event. Default is an empty string.
 - `caption`: displays a caption at the bottom the screen. Default is an empty string.
+- `offset`: the offset in milliseconds. Default is `last.offset + last.duration`
 - `effect.duration`: the length of the event in milliseconds. Default is `default` which uses `settings.duration`.
 - `effect.easing`: the easing function. The default is `default`, which uses `settings.easing`.
 
