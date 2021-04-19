@@ -20,7 +20,7 @@ There will be 3 stored procs OR lambda functions:
 - `undo`: undoes a command. updates the `animations` table, and stores a snapshot in the `versions` table.
 - `redo`: redoes a command. updates the `animations` table, and stores a snapshot in the `versions` table.
 
-## `animations` table
+## Animations table
 
 - `id`: primary key
 - `user_id`: references `auth.users`
@@ -30,7 +30,7 @@ There will be 3 stored procs OR lambda functions:
 - `inserted_at`
 - `updated_at`
 
-## `commands` table
+## Commands table
 
 This table is insert-only
 
@@ -43,7 +43,7 @@ This table is insert-only
 - `previous`: any previous state that would needed to undo the command
 - `inserted_at`
 
-## `versions` table
+## Versions table
 
 This table is insert-only
 
