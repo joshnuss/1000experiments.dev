@@ -6,7 +6,7 @@ permalink: code-animation-database-schema
 tags: code-video, svelte, supabase
 ---
 
-The data will be stored in [supabase][https://supabase.io].
+The data will be stored in [supabase](https://supabase.io).
 
 There will be 3 tables:
 
