@@ -44,3 +44,7 @@ tasks:
         fi
       )
 ```
+
+## Demo
+
+<img src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1618914107/1000experiments.dev/supabase-gitpod-setup-instructions_evwsgf.png" alt="setup instructions"/>

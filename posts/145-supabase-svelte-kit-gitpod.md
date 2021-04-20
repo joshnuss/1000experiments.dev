@@ -143,6 +143,10 @@ NOTE: had some trouble running on gitpod, so I will have to retry this experimen
 
 http://gitpod.io/#https://github.com/joshnuss/supabase-sveltekit-example
 
+## Demo
+
+<video src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1618915722/1000experiments.dev/supbase-gitpod_zcglga.mp4" controls/>
+
 ## Notes
 
 - Should it run supabase locally? That would eliminate the need to setup .env
