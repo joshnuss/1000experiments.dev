@@ -1,5 +1,5 @@
 ---
-title: "Code animation: derived selection store"
+title: "Code animation: Derived selection store"
 experiment: 147
 date: "2021-04-20"
 permalink: selection-store-derived
@@ -16,9 +16,9 @@ To style things differently based on whats selected, it requires checking the se
 </div>
 ```
 
-# Derived store
+## Derived store
 
-In this experiment, I tried a different approach using a `derived()` store. The derived store is a `boolean` value that re-computes based on what's selected. It simplifies the usage a bit:
+In this experiment, I tried a different approach for detected selection using a `derived()` store. The derived store is a `boolean` that re-computes based on what's selected. It simplifies the usage a bit:
 
 ```html
 <script>
