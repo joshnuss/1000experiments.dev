@@ -40,7 +40,7 @@ The derived store implementation looks like this:
 
 ```javascript
 export function isSelected(type, id = null) {
-	return derived(selection, $selection => {
+  return derived(selection, $selection => {
     return $selection && $selection.type == type && $selection.value == id
   })
 }
