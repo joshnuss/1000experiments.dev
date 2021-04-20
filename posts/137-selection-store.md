@@ -25,7 +25,7 @@ But there is only one selection at a time. That means a global store is a good p
 
 ## Code
 
-https://svelte.dev/repl/hello-world?version=3.37.0
+https://svelte.dev/repl/bb2875325ee34c94afaf12b7084f94fc?version=3.37.0
 
 ## Demo
 
