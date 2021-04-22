@@ -1,5 +1,5 @@
 ---
-title: "Code animation: settings editor"
+title: "Code animation: Settings editor"
 experiment: 150
 date: "2021-04-22"
 permalink: settings-editor
@@ -7,7 +7,6 @@ tags: code-video, svelte
 ---
 
 This integrates the previous experiment where I researched creating a [DSL for defining property editor components](/posts/property-ui-dsl).
-
 
 ## SettingsEditor component
 
