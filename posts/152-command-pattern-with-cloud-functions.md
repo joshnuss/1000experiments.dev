@@ -8,11 +8,15 @@ tags: svelte, code-video, supabase
 
 For the [code animation project](/tag/code-video), I am planning to use a [command store](/posts/command-store).
 
-In my initial prototypes I used a [stores to represent the data](/posts/command-store-with-live-updating), but stores means local state. So this experiments explores using remote state, with the local stores reflecting.
+In my initial prototypes, I used a [svelte stores to represent the data](/posts/command-store-with-live-updating), but svelte stores means local state. So this experiment explores using remote state the cloud, with the local stores being only a reflection.
 
 ## Cloud functions
 
-The commands will happen in a cloud function that will update [supabase](https://supabase.io):
+The commands will mutate state in a cloud function and the result will be stored in [supabase](https://supabase.io):
+
+## Execute function
+
+The execute function runs a command handler, increment the pointer and updated the db.
 
 ```javascript
 // routes/animations/[id]/commands/execute.js
@@ -87,7 +91,9 @@ export async function post(req) {
 }
 ```
 
-## Undo
+## Undo function
+
+The undo function, get the command at the current pointer, and runs the command handler in reverse to restore the previous state. In then persists that state in the db.
 
 ```javascript
 // routes/animations/[id]/commands/undo.js
@@ -139,7 +145,7 @@ export async function post(req) {
 }
 ```
 
-## Redo
+## Redo function
 
 The redo function is similar to undo, except it calls `handle.execute()` instead of `handler.undo()`.
 
@@ -194,9 +200,9 @@ export async function post(req) {
 }
 ```
 
-## Client creation
+## Database client abstraction
 
-A client can be created with or without user authorization, so the authorization is optional.
+A client can be created with or without user authorization, so the authorization is optional. I created a utility function to help with this:
 
 ```javascript
 // lib/client.js
@@ -214,10 +220,11 @@ export function client(authorization = null) {
 
 ## Versions
 
-All changes are captured with a trigger, and an insert is made into the `animation_versions` table.
+All changes made to the `animations` table are captured with a trigger, and an copy is inserted into the `animation_versions` table.
 
-It might seem like it's duplicating data from the `animation_commands` table, but it's not. The `versions` table is an append-only log, showing each step that was made. The `commands` table, contains commands that can be undone, if several changes are undone and new change is made, those undone changes are deleted, since they can no longer be applied.
+It might seem like it's duplicating the `animation_commands` table, but it's not. The `versions` table is an append-only log, showing each step that was made. The `commands` table's records can be deleted. For example, if several changes are undone and new change is inserted, the undone changes are deleted, because they can no longer be applied.
 
+Here's how the trigger is defined:
 
 ```sql
 create or replace function handle_updated_animation()
