@@ -79,8 +79,8 @@ This is what the database schema will look like. There aren't too many pieces ne
 - `features` jsonb
 - `monthly_price` money
 - `annual_price` money
-- `monthly_price_id` stripe's price id
-- `annual_price_id` stripe's price id
+- `monthly_price_id` Stripe's price id
+- `annual_price_id` Stripe's price id
 
 ```sql
 create table plans (
@@ -153,7 +153,7 @@ create trigger on_auth_user_created
 - `checkout` for making the initial payment
 - `change-plan` when the member wants to upgrade/downgrade their plan
 - `cancel-account` called to cancel the member's account
-- `stripe-webhook-handler` handles webhooks from stripes, and updates the payment history or marks the member paid/unpaid
+- `stripe-webhook-handler` handles webhooks from Stripe, and updates the payment history or marks the member paid/unpaid
 
 ## Notes
 
