@@ -12,11 +12,11 @@ In my initial prototypes, I used a [svelte stores to represent the data](/posts/
 
 ## Cloud functions
 
-The commands will mutate state in a cloud function and the result will be stored in [supabase](https://supabase.io):
+The commands mutate state in a cloud function and save the results in [supabase](https://supabase.io):
 
 ## Execute function
 
-The execute function runs a command handler, increment the pointer and updated the db.
+The execute function runs a command handler, increments the "pointer", and saves a record of the command in the `animation_commands` table.
 
 ```javascript
 // routes/animations/[id]/commands/execute.js
@@ -39,6 +39,7 @@ export async function post(req) {
     }
   }
 
+  // find the animation
   const { data: animation, error } = await supabase
     .from('animations')
     .select('*')
@@ -63,7 +64,7 @@ export async function post(req) {
     .match({id})
 
   // wipe out all commands past the pointer index
-  // this is in case we undid a bunch of commands
+  // this is just in case we undid commands
   // then if we insert a new command,
   // we cannot redo commands that are ahead in the stack
   await supabase
@@ -72,7 +73,7 @@ export async function post(req) {
     .eq('animation_id', id)
     .gte('pointer', updated.pointer)
 
-  // save command
+  // save a record of the command
   await supabase
     .from('animation_commands')
     .insert({
@@ -103,12 +104,15 @@ import * as commands from '$lib/commands'
 export async function post(req) {
   const supabase = client(req.headers.authorization)
   const { id } = req.params
+
+  // find the animation
   const { data: animation } = await supabase
     .from('animations')
     .select('*')
     .match({id})
     .single()
 
+  // return 404 if animation wasn't found
   if (animation == null) {
     return {
       status: 404,
@@ -116,6 +120,7 @@ export async function post(req) {
     }
   }
 
+  // if the pointer is zero, the are no steps to undo
   if (animation.pointer == 0) {
     return {
       status: 406,
@@ -123,21 +128,27 @@ export async function post(req) {
     }
   }
 
+  // pull down the command record
   const { data: log } = await supabase
     .from('animation_commands')
     .select('*')
     .match({animation_id: id, counter: animation.pointer})
     .single()
 
+  // get the handler
   const command = commands[log.type]
+  // undo the command
   const updated = command.undo(animation, log.args, log.previous)
+  // decrement the pointer
   updated.pointer = animation.pointer - 1
 
+  // update the database
   const { data: returnedData } = await supabase
     .from('animations')  
     .update(updated, { returning: 'representation' })
     .match({id})
 
+  // return the updated data
   return {
     status: 200,
     body: JSON.stringify(returnedData)
@@ -156,12 +167,15 @@ import * as commands from '$lib/commands'
 export async function post(req) {
   const supabase = client(req.headers.authorization)
   const { id } = req.params
+
+  // get the animation data
   const { data: animation } = await supabase
     .from('animations')
     .select('*')
     .match({id})
     .single()
 
+  // return 404 if no record found
   if (animation == null) {
     return {
       status: 404,
@@ -169,14 +183,14 @@ export async function post(req) {
     }
   }
 
+  // find the command at the pointer
   const { data: log } = await supabase
     .from('animation_commands')
     .select('*')
-    .match({animation_id: id})
-    .order('counter', { ascending: false })
-    .limit(1)
+    .match({animation_id: id, counter: animation.pointer})
     .single()
 
+  // if this the last command, we can't redo anything
   if (animation.pointer == log.counter) {
     return {
       status: 406,
@@ -184,15 +198,20 @@ export async function post(req) {
     }
   }
 
+  // find the command handler
   const command = commands[log.type]
+  // redo the command
   const { state: updated } = command.execute(animation, log.args)
+  // increment the pointer
   updated.pointer = animation.pointer + 1
 
+  // update the database
   const { data: returnedData } = await supabase
     .from('animations')
     .update(updated, { returning: 'representation' })
     .match({id})
 
+  // return the updated data
   return {
     status: 200,
     body: JSON.stringify(returnedData)
