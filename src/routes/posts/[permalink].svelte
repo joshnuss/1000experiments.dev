@@ -14,7 +14,7 @@
   export let post
 
   onMount(() => {
-    if (twttr)
+    if (typeof(twttr) !== 'undefined')
       twttr.widgets.load();
   })
 </script>
