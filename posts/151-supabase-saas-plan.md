@@ -26,7 +26,7 @@ So this post is about organizing this project, and seeing what's left before I s
 
 ## Use Cases
 
-As a user, I can view pricing, testimonials
+As a user, I can view features, testimonials and pricing
 As a user, I can signup and pay for a subsciption
 As a member, I can view my payment history
 As a member, I can cancel subsciption
@@ -34,6 +34,7 @@ As a member, I can upgrade/downgrade my plan
 As a member, I can log out
 As a member, I can view paid content
 As a unpaid user, I cannot view paid content
+As a business owner, I can set up a SaaS with one click
 
 ## Sitemap
 
