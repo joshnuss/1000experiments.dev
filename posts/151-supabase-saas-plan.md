@@ -158,3 +158,4 @@ create trigger on_auth_user_created
 
 - One of the challenges with templates is how much design do they have? There are 3 ways: Fully designed (custom css or tailwind), minimal design, no design. I wonder if it would be possible to ship 3 versions of the html in seperate folders, so the user can choose their starting point. or maybe it could be a separate branch.
 - Should credit card info and sign up info be input on the same screen, or can we ask for CC as seperate page after they sign up (it would be easier to implement).
+- Often there are rules on plans, like quotas (ie `max_videos_per_month`, `max_file_size`) or flags (ie `zapier_enabled`). Those can be fields in the `plans` tables, but they should probably be copied to `members` table too. Because if a plans rules changes down the road, you'd probably want previous customer agreements to be grandfathered in.
