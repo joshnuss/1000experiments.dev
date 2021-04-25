@@ -26,6 +26,10 @@ h1 {
   color: var(--highlight-color)
 }
 
+h2 {
+  margin: 3rem 0 1rem;
+}
+
 a {
   color: inherit;
   text-decoration-color: #afe6e8;
@@ -41,7 +45,8 @@ a {
   margin: 5px 0;
 }
 pre {
-  border-radius: 4px;
+  border-radius: 16px;
+  background: #f7f7f7;
 }
 
 code {
