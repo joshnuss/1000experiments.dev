@@ -10,11 +10,14 @@ In [experiment #149](/posts/screen-editor-intergration), there was a bug where t
 
 ## Problem
 
-[CodeMirror](https://codemirror.net) is a vanila JavaScript library, so it has no concept of databinding.
+[CodeMirror](https://codemirror.net) is a vanilla JavaScript library, so it has no concept of Svelte's data-binding.
 
 ## Solution
 
-Simulate 2-way data binding by capturing `change` events, and updating the underlying value and reacting to updates of the underlying value and notifying codemirror.
+Simulate 2-way data binding by:
+
+1. capturing `change` events, and updating the underlying value
+2. reacting to updates of the underlying value and notifying codemirror by calling `setValue()`.
 
 ```javascript
 $: if (editor) {
@@ -32,7 +35,7 @@ $: if (editor) {
 
 ## Challenge
 
-When updating the editor by calling `setValue()`, it loses the cursor position. A workaround is to capture the previous cursor position by calling `getCursor()`, updating the value by calling `setValue()`, and then restoring the cursor with `setCursor()`.
+When updating the editor via `setValue()`, the cursor position is lost. A workaround is to capture the previous cursor position by calling `getCursor()`, updating the value by calling `setValue()`, and then restoring the cursor with `setCursor()`.
 
 Here's an example:
 
@@ -43,7 +46,7 @@ $: if (editor) {
   // get current cursor
   const pos = editor.getCursor()
 
-  // update the code displayed
+  // update the code
   editor.setValue(code)
 
   // restore the cursor position
