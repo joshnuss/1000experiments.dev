@@ -39,6 +39,8 @@
   {@html post.html}
 </div>
 
+<a href="/">view all experiments</a>
+
 <style>
   h1 {
     margin-top: 10px;
