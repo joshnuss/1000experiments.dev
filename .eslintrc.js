@@ -3,9 +3,8 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    "cypress/globals": true
   },
-  plugins: ['svelte3', 'cypress'],
+  plugins: ['svelte3'],
   ignorePatterns: ["__sapper__/", "node_modules/"],
   extends: "eslint:recommended",
   globals: {
