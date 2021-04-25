@@ -8,6 +8,6 @@
   <title>1,000 Experiments</title>
 </svelte:head>
 
-<h1>1,000 Experiments</h1>
+<h1>💡 1,000 Experiments</h1>
 
 <PostList {posts}/>
