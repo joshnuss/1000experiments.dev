@@ -1,5 +1,5 @@
 ---
-title: "Code animation: layout adjustments"
+title: "Code animation: Layout adjustments"
 experiment: 155
 date: "2021-04-25"
 permalink: layout-adustments
