@@ -142,8 +142,8 @@ Append always happens at the end, so there's no position specified. It's basical
 </Section>
 
 <Section title="Options">
-  <ChecboxField label="Typewriter Effect" bind:value={event.typewriter}/>
-  <ChecboxField label="Highlight" bind:value={event.highlight}/>
+  <CheckboxField label="Typewriter Effect" bind:value={event.typewriter}/>
+  <CheckboxField label="Highlight" bind:value={event.highlight}/>
 </Section>
 ```
 
@@ -159,8 +159,8 @@ Append always happens at the end, so there's no position specified. It's basical
 </Section>
 
 <Section title="Options">
-  <ChecboxField label="Typewriter Effect" bind:value={event.typewriter}/>
-  <ChecboxField label="Highlight" bind:value={event.highlight}/>
+  <CheckboxField label="Typewriter Effect" bind:value={event.typewriter}/>
+  <CheckboxField label="Highlight" bind:value={event.highlight}/>
 </Section>
 ```
 
@@ -182,8 +182,8 @@ Append always happens at the end, so there's no position specified. It's basical
 </Section>
 
 <Section title="Options">
-  <ChecboxField label="Typewriter Effect" bind:value={event.typewriter}/>
-  <ChecboxField label="Highlight" bind:value={event.highlight}/>
+  <CheckboxField label="Typewriter Effect" bind:value={event.typewriter}/>
+  <CheckboxField label="Highlight" bind:value={event.highlight}/>
 </Section>
 ```
 
@@ -200,9 +200,9 @@ A delete happens starting at a secific position, which can be defined as a chara
   <NumberField bind:value={event.length}/>
 </Section>
 
-<Section title="Options">
-  <ChecboxField label="Typewriter Effect" bind:value={event.typewriter}/>
-  <ChecboxField label="Highlight" bind:value={event.highlight}/>
+<Section title="Effects">
+  <CheckboxField label="Typewriter" bind:value={event.typewriter}/>
+  <CheckboxField label="Highlight" bind:value={event.highlight}/>
 </Section>
 ```
 
