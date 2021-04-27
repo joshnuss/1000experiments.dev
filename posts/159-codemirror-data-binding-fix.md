@@ -1,5 +1,5 @@
 ---
-title: "Code animation: Codemirror data-biding fix"
+title: "Code animation: Codemirror data-binding fix"
 experiment: 159
 date: "2021-04-27"
 permalink: codemirror-data-binding-fix
