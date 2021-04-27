@@ -173,6 +173,10 @@ The `<ScrollEditor>` component:
 </Section>
 ```
 
+## Snapshot
+
+https://gitpod.io#snapshot/0ae010de-163b-4b84-b536-bf2dcf8805bc
+
 ## Demo
 
 <video src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1619515673/1000experiments.dev/event-editor-types_d0hkba.mp4" controls/>
