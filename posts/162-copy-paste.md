@@ -6,11 +6,11 @@ permalink: copy-paste
 tags: svelte, code-video
 ---
 
-For the event timeline, the user should be able to copy and paste events. I built an example for [inserted using the context menu](/posts/insert-at-point), this expands on it to add copy and paste menu items.
+For the event timeline, the user should be able to copy and paste events. I built an example for [inserting using the context menu](/posts/insert-at-point). This expands on that to add copy and paste menu items.
 
 ## Clipboard API
 
-The clipboard does not work in Svelte's REPL because of permissions, so I had to do it locally. It prompts the user to allow permissions for copy and paste.
+The clipboard does not work in Svelte's REPL because of permission restrictions, so I had to do it locally. This will prompt the user to allow copy and paste.
 
 ## Code
 
