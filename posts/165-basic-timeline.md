@@ -3,7 +3,7 @@ title: "Code animation: Basic timeline"
 experiment: 165
 date: "2021-04-30"
 permalink: basic-timeline
-tags: code-video, svelte
+tags: code-video, svelte, integration
 ---
 
 Now comes the fun part where I get to integrate a bunch of experiments together.

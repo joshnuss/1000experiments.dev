@@ -3,7 +3,7 @@ title: "Code animation: Drag to move or resize with grid"
 experiment: 166
 date: "2021-05-01"
 permalink: drag-snap-move-resize
-tags: svelte, code-video
+tags: svelte, code-video, integration
 ---
 
 This is integration of the following experiments:
