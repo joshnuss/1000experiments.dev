@@ -3,7 +3,7 @@ title: "Code animation: Timeline with keyboard & mouse events"
 experiment: 167
 date: "2021-05-01"
 permalink: timeline-keyboard-mouse-events
-tags: svelte, code-video
+tags: svelte, code-video, integration
 ---
 
 This is integration of the following experiments:
