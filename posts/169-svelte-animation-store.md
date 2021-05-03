@@ -3,7 +3,7 @@ title: "Code animation: Animation store"
 experiment: 169
 date: "2021-05-02"
 permalink: svelte-animation-store
-tags: svelte, code-video
+tags: svelte, code-video, integration
 ---
 
 This is an integration of 2 experiments I did around Svelte's tweened store:
@@ -13,7 +13,7 @@ This is an integration of 2 experiments I did around Svelte's tweened store:
 
 ## Code
 
-I packaged up the code. It's an alpha version:
+Released the code as an NPM package:
 
 - [GitHub Repo](https://github.com/joshnuss/svelte-animation-store)
 - [NPM package](http://npmjs.com/package/svelte-animation-store)
