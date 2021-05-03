@@ -8,7 +8,7 @@ tags: svelte, code-video
 
 I'd like to release a svelte store that is based on svelte's `tweened()` stores but with some extra methods.
 
-I experimented with some additional methods in [#35](/posts/pausable-tween-store) and [#37](/posts/reverse-tween), but one that is missing is variable speed.
+I experimented with some additional methods in [#35](/posts/pausable-tween-store), [#37](/posts/reverse-tween) and [#48](/posts/restoring-easing-function), but one thing is missing was variable speed adjustment.
 
 This experiment looks at how to adjust the tweened store's speed while it's playing. This is needed for the timeline view, to allow the user to watch at different speeds, ie @2X or @4X speed.
 
