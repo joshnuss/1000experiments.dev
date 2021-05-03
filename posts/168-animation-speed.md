@@ -18,5 +18,5 @@ https://svelte.dev/repl/1c38a4b762714589a2896e2caf6d8af8?version=3.38.1
 
 ## Demo
 
-<video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1620003864/1000experiments.dev/animation-speed_gkv6an.mp4"/>
+<video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1620004930/1000experiments.dev/animation-speed_dzsd6t.mp4"/>
 
