@@ -23,3 +23,4 @@ https://svelte.dev/repl/c57e77c89812454ea86f1342a3b7486d?version=3.37.0
 ## Notes
 
 - This doesn't handle grid snapping properly. Will have to look into that.
+- Should work for moving event as well
