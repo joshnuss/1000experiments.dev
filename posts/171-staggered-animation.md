@@ -6,9 +6,15 @@ permalink: staggered-animation
 tags: svelte, code-video
 ---
 
-This one looks at building up a bunch of animations by using the `delay` option.
+This one looks at triggering a sequence of animations using the `delay:` option.
 
-In the pase, I investigated [nested tweens](/posts/nested-tweens-with-pausing), but I think this is a simpler approach, because each animation has it's duration and delay defined, so you can start them all at once, and pause them all at once.
+```javascript
+const a = tweened(0, {duration: 1000, delay: 0})
+const b = tweened(0, {duration: 1000, delay: 1000})
+const c = tweened(0, {duration: 1000, delay: 2000})
+```
+
+In the past, I investigated [nested tweens](/posts/nested-tweens-with-pausing), but I think this is a simpler approach, because each animation has its own duration and delay defined, so they can be started and/or stopped all at once.
 
 ## Code
 
