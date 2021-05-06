@@ -41,3 +41,4 @@ https://svelte.dev/repl/aba73c2d69884051b43c53b8524e2556?version=3.38.2
 ## Notes
 
 - Maybe an abstraction can be created on top of this, like "an array of tweens", so you can run a set of operations on many tweens at once.
+- Another way to accomplish this, may be by making a custom interpolator function.
