@@ -6,11 +6,11 @@ permalink: discrete-tween
 tags: svelte, code-video
 ---
 
-Svelte's builtin `tweened()` store works on continuous values. ie if the store's value is zero, and it's set to `1`, it may produce values like `0`, `0.1`, `0.5`, `0.6`, `0.7`...`1`.
+This experiment builds on top of svelte's `tweened()` store, to provide a store can animate between discrete values.
 
-But sometimes you have values that are discrete. For example, if you want to toggle between several states `['red', 'green', 'blue']`. In this case you want to tween the index of the array, instead of the value.
+Svelte's builtin `tweened()` works on continuous values. ie. if the store's value is zero, and later it's set to `1`, it will produce values like `0`, `0.1`, `0.5`, `0.6`, `0.7`...`1`.
 
-This experiment builds a new store on top of `tweened()` that can animate between discrete values.
+But sometimes you have values that are discrete. For example, if you want to toggle between several states `['red', 'green', 'blue']`. In this case, we want to animate the index of the array, and return the value at that index.
 
 The API looks like this:
 
