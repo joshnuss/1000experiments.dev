@@ -16,6 +16,10 @@ And it's really nice to have supabase working on the server side and the client 
 
 Server-side access to supabase will come in handy when we need to talk to external services like Stripe. So stay tuned.
 
+## Code
+
+https://svelte.dev/repl/30a4f2c700d24f5bb51781f1c52b8b28?version=3.38.2
+
 ## Demo
 
 <img alt="screenshot" src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1616228690/1000experiments.dev/Screenshot_from_2021-03-20_04-23-48_pefmil.png"/>
