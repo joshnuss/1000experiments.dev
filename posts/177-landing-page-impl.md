@@ -21,3 +21,4 @@ I decided, I will do a free plan with a watermark on the videos, and a paid plan
 ## Notes
 
 - Test out dark mode
+- Need to settle on a name
