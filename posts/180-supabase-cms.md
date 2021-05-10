@@ -8,7 +8,7 @@ tags: supabase, svelte, idea
 
 This is a rough idea.
 
-I was thinking how a CMS would work with supabase, and it turns out to be a really good idea, I think it's a great fit. It can provide most of what Contentful does for free/much lower cost.
+I was thinking how a CMS would work with supabase, and it turns out to be a pretty good idea. It can provide most of what Contentful does for free/much lower cost.
 
 All you need to is a list of fields, and it does the rest to build the CMS:
 
