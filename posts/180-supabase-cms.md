@@ -14,7 +14,7 @@ All you'd need is a list of fields, and the code generator would do a bunch of w
 - Add the primary keys, foreign keys and common fields, like `id`, `user_id`, `status`, `inserted_at`, `updated_at`, `published_at`.
 - Generate the security policies. Only `published` data should be accessible to the public, while creating and updating would require authentication.
 - Adds a trigger to set the `updated_at` timestamp.
-- Adds a `*_versions` table to log each change.
+- Adds a `*_versions` table and a trigger to capture each change.
 - Access the content via the standard supabase API, ie `await supabase.from('table_name').select('*')`.
 - It notifies whenever things change via supabase's `realtime` API.
 - Future: provide a visual editor for doing CRUD, publishing, scheduling, and archiving.
