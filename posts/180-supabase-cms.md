@@ -3,7 +3,7 @@ title: Supabase CMS
 experiment: 180
 date: "2021-05-10"
 permalink: supabase-cms
-tags: supabase, svelte
+tags: supabase, svelte, idea
 ---
 
 This is a rough idea.
