@@ -6,21 +6,19 @@ permalink: supabase-cms
 tags: supabase, svelte, idea
 ---
 
-This is a rough idea.
+I was thinking about how a CMS could work with supabase. One approach is to use a code generator.
 
-I was thinking how a CMS would work with supabase. One approach is to use a code generator. It would provide most of what Contentful.
-
-All you'd need is a list of fields, and the code generator would do the rest :
+All you'd need is a list of fields, and the code generator would do a bunch of work for you:
 
 - Generate the SQL to create the tables.
-- Adds the primary keys, foreign keys and common fields, like `id`, `user_id`, `status`, `inserted_at`, `updated_at`, `publish_at`.
-- Generate the policies. Only `published` data would be accessible to the public. Creating and updating would require authentication.
+- Add the primary keys, foreign keys and common fields, like `id`, `user_id`, `status`, `inserted_at`, `updated_at`, `published_at`.
+- Generate the security policies. Only `published` data should be accessible to the public, while creating and updating would require authentication.
 - Adds a trigger to set the `updated_at` timestamp.
 - Adds a `*_versions` table to log each change.
-- Content is accessible via the standard Supabase API, ie `await supabase.from('posts').select('*')`.
+- Access the content via the standard supabase API, ie `await supabase.from('table_name').select('*')`.
 - It notifies whenever things change via supabase's `realtime` API.
-- Future: provide a visual editor for doing CRUD, publishing, scheduling and archiving.
-- Future: migrate the DB automatically, no need for copy & paste.
+- Future: provide a visual editor for doing CRUD, publishing, scheduling, and archiving.
+- Future: migrate the DB automatically, without copy & paste.
 - Future: attach files to rows using [Supabase Storage](https://supabase.io/storage).
 
 ## Code
