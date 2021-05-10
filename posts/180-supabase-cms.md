@@ -34,3 +34,4 @@ https://svelte.dev/repl/58ad718676504e558f4a893e2ac050af?version=3.38.2
 ## Notes
 
 - Add default values
+- When `publish_at` is set, and `status = 'scheduled'` a CRON job should run to mark the post `published`, that will trigger realtime updates.
