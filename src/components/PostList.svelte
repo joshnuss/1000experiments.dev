@@ -32,7 +32,4 @@
   a:hover h2 {
     color: var(--highlight-color);
   }
-  a:hover .experiment {
-    background: var(--highlight-color);
-  }
 </style>
