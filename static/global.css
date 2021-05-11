@@ -1,6 +1,6 @@
 :root {
   --highlight-color: #54ccd2;
-  --alternate-color: #ffb970;
+  --alternate-color: #7c4dff;
   --light-color: #dffdff;
   --dark-color: #3c3c3c;
 }
@@ -21,13 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  margin: 3rem 0 2rem;
   font-size: 3.4em;
-  font-weight: bold;
-  color: var(--highlight-color)
+  font-weight: 300;
+  line-height: 1.05em;
 }
 
 main h2 {
   margin: 3rem 0 1rem;
+  color: #444;
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
 }
 
 a {
@@ -36,14 +44,6 @@ a {
   text-decoration-thickness: 3px;
 }
 
-.experiment {
-  display: inline-block;
-  background: var(--alternate-color);
-  color: white;
-  padding: 3px 10px;
-  border-radius: 3px;
-  margin: 5px 0;
-}
 pre {
   border-radius: 16px;
   background: #f7f7f7;
@@ -64,7 +64,10 @@ pre code {
 }
 
 .content {
-  font-size: 1.2rem;
+  font-size: 1.4em;
+  color: #666;
+  line-height: 1.6em;
+  margin-top: 3rem;
 }
 .content video, .content img {
   max-width: calc(100vw - 2rem);
@@ -74,6 +77,11 @@ pre code {
 }
 .content pre {
   margin-bottom: 1rem !important;
+}
+.content li {
+  line-height: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 400px) {

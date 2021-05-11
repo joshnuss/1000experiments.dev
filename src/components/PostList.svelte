@@ -5,8 +5,7 @@
 {#each posts as post}
   <article>
     <a href={`/posts/${post.permalink}`}>
-      <span class="experiment">#{post.experiment}</span>
-      <h2>{post.title}</h2>
+      <h2>#{post.experiment} - {post.title}</h2>
     </a>
   </article>
 {/each}

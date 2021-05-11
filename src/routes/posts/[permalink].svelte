@@ -1,4 +1,5 @@
 <script context="module">
+  import SignupForm from '@/components/SignupForm.svelte'
   import { findPost } from '@/posts'
 
   export function preload(page) {
@@ -24,12 +25,15 @@
   <meta name="keywords" content={post.tags.join(',')}/>
 </svelte:head>
 
-<span class="experiment">Experiment #{post.experiment}</span>
-<Tags tags={post.tags}/>
+<a href="/">Experiments</a> &gt;
 
 <h1>{post.title}</h1>
 
-<p>
+<p class="overview">
+  <span>
+    Experiment #{post.experiment}
+  </span>
+  ●
   <span class="date">{format(post.date, "do MMMM, yyyy")}</span>
   ●
   <span class="author">by <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
@@ -39,18 +43,30 @@
   {@html post.html}
 </div>
 
+<Tags tags={post.tags}/>
+
 <a href="/">view all experiments</a>
 
-<style>
-  h1 {
-    margin-top: 10px;
-  }
+<div class="container">
+  <SignupForm/>
+</div>
 
+<style>
   :global(code) {
     font-size: 1.1rem !important;
   }
 
+  h1 {
+    margin-top: 1rem;
+  }
+
   .author a {
     text-decoration: none;
+  }
+
+  p.overview {
+    font-weight: normal;
+    color: #666;
+    font-size: 1.2em;
   }
 </style>
