@@ -27,7 +27,6 @@
 <style>
   main {
     position: relative;
-    max-width: 56em;
     background-color: white;
     padding: 2em 10px;
     margin: 0 auto;
@@ -41,11 +40,11 @@
   }
 
   footer .container {
-    margin: 0 auto;
+    margin: 0 1rem;
     display: flex;
     max-width: 56em;
     padding: 2em 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -69,5 +68,13 @@
     height: 8px;
     width: 100%;
     background: var(--alternate-color);
+  }
+
+
+  @media (min-width: 500px) {
+    footer .container {
+      margin: 0px auto;
+      justify-content: space-between;
+    }
   }
 </style>

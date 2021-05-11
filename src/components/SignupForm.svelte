@@ -29,15 +29,15 @@
     border-radius: 5px;
     border: solid 1px #ccc;
     color: #444;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    border-radius: 4px 0 0 4px;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
     border-right: 0;
   }
   input[type=submit] {
     background: var(--alternate-color);
     color: white;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     border-left: 0;
     cursor: pointer;
   }
@@ -45,10 +45,13 @@
   .stack {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .wrapper {
     display: flex;
+    flex-direction: column;
+    gap: 5px;
     border-radius: 5px;
   }
 
@@ -58,10 +61,40 @@
     padding: 0rem 2rem 2rem;
     border-radius: 7px;
     box-shadow: 2px 2px #0003;
+    display: flex;
+    justify-content: center;
   }
 
-  h2 {
-    padding-top: 2rem;
+  #mc_embed_signup_scroll {
+    text-align: center;
+    max-width: 300px;
   }
 
+  @media (min-width: 500px) {
+    input {
+      padding: 1rem 2rem;
+      border-radius: 5px 0 0 5px;
+      font-size: 1.4rem;
+    }
+
+    input[type=submit] {
+      border-radius: 0 5px 5px 0;
+      border-left: 0;
+      margin-left: 0;
+    }
+
+    .wrapper {
+      flex-direction: row;
+      gap: 0px;
+    }
+
+    #mc_embed_signup {
+      justify-content: flex-start;
+    }
+
+    #mc_embed_signup_scroll {
+      text-align: left;
+      max-width: unset;
+    }
+  }
 </style>

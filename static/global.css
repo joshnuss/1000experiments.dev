@@ -8,7 +8,7 @@
 body {
   margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: #444;
 }
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin: 3rem 0 2rem;
-  font-size: 3.4em;
+  font-size: 2.4em;
   font-weight: 300;
   line-height: 1.05em;
 }
@@ -30,7 +30,7 @@ h1 {
 main h2 {
   margin: 3rem 0 1rem;
   color: #444;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -86,9 +86,58 @@ pre code {
 
 @media (min-width: 400px) {
   body {
-    font-size: 16px;
+    width: 100%;
+    font-size: 14px;
   }
+
+  code {
+    font-size: 1.1rem !important;
+  }
+
+  h1 {
+    font-size: 2.4em;
+    line-height: 1.05em;
+  }
+
+  main h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    max-width: 56em;
+  }
+
+  footer {
+    margin: 0 auto;
+  }
+
   .content video, .content img {
     max-width: calc(50vw - 2rem);
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  code {
+    font-size: 1.1rem !important;
+  }
+
+  h1 {
+    font-size: 3.4em;
+  }
+
+  main h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 }

@@ -52,10 +52,6 @@
 </div>
 
 <style>
-  :global(code) {
-    font-size: 1.1rem !important;
-  }
-
   h1 {
     margin-top: 1rem;
   }
@@ -65,8 +61,12 @@
   }
 
   p.overview {
-    font-weight: normal;
+    font-weight: bold;
     color: #666;
     font-size: 1.2em;
+  }
+
+  .container {
+    margin-top: 1rem;
   }
 </style>
