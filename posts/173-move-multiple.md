@@ -6,7 +6,7 @@ permalink: move-multiple
 tags: code-video, svelte
 ---
 
-Continuing from the previous post where I adding a feature the timeline to [expand multiple events at once](/posts/drag-all).
+Continuing from the previous post where I added a feature to the timeline to [expand multiple events at once](/posts/drag-all).
 
 In this one, I looked at doing something similar for moving.
 
