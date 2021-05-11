@@ -6,7 +6,7 @@ permalink: better-snapping
 tags: svelte, code-video
 ---
 
-In a [previous experiment](posts/173-move-multiple.md), I added the ability to move events based on a grid, aka "snapping".
+In a [previous experiment](/posts/move-multiple), I added the ability to move events based on a grid, aka "snapping".
 
 But there were some bugs, so I revisted it again.
 
