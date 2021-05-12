@@ -7,13 +7,15 @@ tags: supabase, sql
 ---
 
 Sometimes you want to publish content at a later time. So I built the concept into the [CMS data model generator](/posts/supabase-cms).
-j
+
 Each table has a `status` field, that can be one of:
 
 - `draft`: this is the default state, it means the content is not publicly accessible.
 - `published`: the content is available to the public.
 - `scheduled`: the content will be available later. It is not available to the public until the date/time specified in the `scheduled_at` column has passed. Then it will be marked published.
-- `archived`: no longer available to the public
+- `archived`: the record no longer available to the public.
+
+# Transitioning to published
 
 The way we transition a record from `status = 'scheduled'` to `status = 'published'` is via a cron job that runs every 5 minutes.
 
