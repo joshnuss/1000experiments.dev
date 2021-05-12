@@ -20,4 +20,4 @@ https://svelte.dev/repl/53403d6fea2c48e9b6be3cd45d2935f4?version=3.38.2
 
 ## Notes
 
--
+- Zoom level is inverted
