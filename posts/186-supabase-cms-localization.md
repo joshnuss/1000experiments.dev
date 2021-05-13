@@ -49,7 +49,7 @@ end;
 $$ language plpgsql;
 ```
 
-Worked pretty good!
+Worked pretty well!
 
 ## Code
 
