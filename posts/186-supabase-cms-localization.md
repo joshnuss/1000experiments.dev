@@ -3,7 +3,7 @@ title: "Supabase CMS: Localization"
 experiment: 186
 date: "2021-05-13"
 permalink: supabase-cms-localization
-tags: svelte, supabase
+tags: svelte, supabase, cms, sql
 ---
 
 Continuing on from the [previous experiment](/posts/supabase-cms-scheduling), I added support for localizing content by language.

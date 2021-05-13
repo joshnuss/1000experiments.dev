@@ -3,7 +3,7 @@ title: Supabase CMS
 experiment: 180
 date: "2021-05-10"
 permalink: supabase-cms
-tags: supabase, svelte, idea
+tags: supabase, svelte, idea, cms
 ---
 
 I was thinking about how a CMS could work with supabase. One approach is to use a code generator.

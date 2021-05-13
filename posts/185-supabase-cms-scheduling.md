@@ -3,7 +3,7 @@ title: "Supabase CMS: Content scheduling"
 experiment: 185
 date: "2021-05-12"
 permalink: supabase-cms-scheduling
-tags: supabase, sql
+tags: supabase, sql, cms
 ---
 
 Sometimes you want to publish content at a later time. So I built the concept into the [CMS data model generator](/posts/supabase-cms).
