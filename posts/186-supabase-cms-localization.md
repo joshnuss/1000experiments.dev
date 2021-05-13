@@ -54,3 +54,7 @@ Worked pretty good!
 ## Code
 
 https://svelte.dev/repl/42f6d1b0ced941fa97d0e35759dfba7e?version=3.38.2
+
+## Notes
+
+- Add policy for `*_locales` tables
