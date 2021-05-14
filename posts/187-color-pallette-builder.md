@@ -10,9 +10,9 @@ I was reading the [Refactoring UI book](https://www.refactoringui.com/), and the
 
 So I put together an example, it's not finished yet, but it partially works, so I'm considering it a completed experiment.
 
-The cool thing is, it animates the pallette as more colors are added, using svelte's [crossfade transition](https://svelte.dev/tutorial/deferred-transitions) and uses [d3-color](https://github.com/d3/d3-color) to aproximate a color between the 2.
+The cool thing is, it animates the pallette as more colors are added, using svelte's [crossfade transition](https://svelte.dev/tutorial/deferred-transitions) and uses [d3-color](https://github.com/d3/d3-color) to aproximate a color halfway between 2 colors.
 
-It also generates the CSS variables, ie:
+It also generates the CSS variables for you, ie:
 
 ```css
 --primary-color-100: ...;
@@ -21,6 +21,8 @@ It also generates the CSS variables, ie:
 --primary-color-400: ...;
 --primary-color-500: ...;
 ```
+
+So you can copy & paste directly into your project.
 
 ## Code
 
