@@ -6,6 +6,7 @@ yarn-error.log
 /__sapper__/
 /static/images/*.mp3
 /static/images/*.mp4
+/static/images/*.png
 
 .now
 .vercel
