@@ -68,6 +68,7 @@ pre code {
   color: #666;
   line-height: 1.7em;
   margin-top: 3rem;
+  letter-spacing: -0.04em;
 }
 .content video, .content img {
   max-width: calc(100vw - 2rem);
