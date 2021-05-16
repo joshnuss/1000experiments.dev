@@ -3,10 +3,10 @@ title: Newsfeed as a Service Example
 experiment: 69
 date: "2021-03-22"
 permalink: newsfeed-as-a-service-example
-tags: node, idea
+tags: node, idea, newsfeed
 ---
 
-[Based on previous idea](https://1000experiments.dev/posts/newsfeed-as-a-service) this is a service for managing an activity feed, providing storage, querying, push notifications, email notifications and read tracking.
+Based on the [newsfeed on a service idea](https://1000experiments.dev/posts/newsfeed-as-a-service), this is a service for managing an activity feed, providing storage, querying, push notifications, email notifications and read tracking.
 
 ## Features
 
