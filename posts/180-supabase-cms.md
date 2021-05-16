@@ -6,20 +6,28 @@ permalink: supabase-cms
 tags: supabase, svelte, idea, cms
 ---
 
-I was thinking about how a CMS could work with supabase. One approach is to use a code generator.
+Was thinking a bit about how a CMS could work with supabase.
 
-All you'd need is a list of fields, and the code generator would do a bunch of work for you:
+One approach is to use a code generator.
 
-- Generates the SQL to create the tables.
-- Adds the primary keys, foreign keys and common fields, like `id`, `user_id`, `status`, `inserted_at`, `updated_at`, `published_at`.
-- Generates the security policies. Only `published` data should be accessible to the public, while creating and updating would require authentication.
-- Adds a trigger to set the `updated_at` timestamp.
-- Adds a `*_versions` table and a trigger to capture each change.
-- The content is accessible via the standard supabase API, ie `await supabase.from('table_name').select('*')`.
-- It notifies whenever things change via supabase's `realtime` API.
-- Future: provide a visual editor for doing CRUD, publishing, scheduling, and archiving.
-- Future: migrate the DB automatically, without copy & paste.
-- Future: attach files to rows using [Supabase Storage](https://supabase.io/storage).
+All you'd need is a list of fields, and the code generator would do a bunch of work for you, like:
+
+- Generating the SQL to create the tables.
+- Adding the primary keys, foreign keys and common fields, like `id`, `user_id`, `status`, `inserted_at`, `updated_at`, `published_at`.
+- Generating the security policies. Only `published` data should be accessible to the public, while creating and updating would require authentication.
+- Adding a trigger to set the `updated_at` timestamp.
+- Adding a `*_versions` table and a trigger to capture each change.
+
+We also get a few things for free:
+
+- The content is accessible via the standard supabase API, ie `await supabase.from('table_name').select('*')`. So no special API is needed.
+- It notifies whenever something changes via supabase's `realtime` API.
+
+In the future, it could provide:
+
+- A visual editor for doing CRUD, publishing, scheduling, and archiving.
+- A way to migrate the DB automatically, without copy & paste.
+- The ability to Attach files to rows using [Supabase Storage](https://supabase.io/storage).
 
 ## Code
 
