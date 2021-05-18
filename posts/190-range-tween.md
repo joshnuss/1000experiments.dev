@@ -17,3 +17,7 @@ https://svelte.dev/repl/c90aea54f17c4024b467e3a33299fefa?version=3.38.2
 ## Demo
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1621307797/1000experiments.dev/range-tween_ltyjbh.mp4"/>
+
+## Notes
+
+- This could be implemented with [discrete tween](/posts/discrete-tween) as well
