@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import { parse } from 'date-fns'
-import all from '../posts/*.md'
+
+const all = import.meta.globEager("../routes/posts/*.md")
 
 export const posts = _.chain(all)
   .map(transform)
@@ -15,7 +16,10 @@ export function findByTag(tag) {
   return posts.filter(post => post.tags.includes(tag))
 }
 
-function transform({filename, metadata, html}) {
+function transform({metadata}) {
+  if (!metadata.permalink) throw new Error('Missing permalink')
+  if (!metadata.date) throw new Error('Missing date')
+
   const permalink = metadata.permalink || filename.replace(/.md$/, '')
   const date = parse(metadata.date, 'yyyy-MM-dd', new Date())
   let tags = []
@@ -24,5 +28,5 @@ function transform({filename, metadata, html}) {
     tags = metadata.tags.split(',').map(str => str.trim())
   }
 
-  return {...metadata, filename, permalink, html, date, tags}
+  return {...metadata, permalink, date, tags}
 }

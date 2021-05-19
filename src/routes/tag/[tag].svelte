@@ -1,7 +1,7 @@
 <script context="module">
-  import { findByTag } from '@/posts'
+  import { findByTag } from '$/posts'
 
-  export function preload(page) {
+  export function load(page) {
     const { tag } = page.params
     const posts = findByTag(tag)
 
@@ -10,7 +10,7 @@
 </script>
 
 <script>
-  import PostList from '@/components/PostList.svelte'
+  import PostList from '$lib/components/PostList.svelte'
 
   export let tag, posts
 </script>

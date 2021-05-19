@@ -1,17 +1,29 @@
 <script context="module">
-  import SignupForm from '@/components/SignupForm.svelte'
-  import { findPost } from '@/posts'
+  import SignupForm from '$lib/components/SignupForm.svelte'
+  import { findPost } from '$lib/posts'
 
-  export function preload(page) {
-    return { post: findPost(page.params.permalink) }
-  }
+  export async function load({ page, fetch }) {
+		const post = findPost(page.path.split("/")[2])
+
+		if (!post) {
+			return {
+				status: 404,
+				error: new Error('Post could not be found')
+			}
+		}
+
+		return {
+			props: {
+				post
+			}
+		}
+	}
 </script>
 
 <script>
   import { onMount } from 'svelte'
   import { format } from 'date-fns'
-  import highlight from '@/highlight'
-  import Tags from '@/components/Tags.svelte'
+  import Tags from '$lib/components/Tags.svelte'
   export let post
 
   onMount(() => {
@@ -40,7 +52,7 @@
 </p>
 
 <div class="content" use:highlight>
-  {@html post.html}
+  <slot/>
 </div>
 
 <Tags tags={post.tags}/>
