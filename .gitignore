@@ -9,5 +9,4 @@ yarn-error.log
 /static/images/*.png
 
 /.vercel
-/.vercel_build_output
 /.svelte-kit
