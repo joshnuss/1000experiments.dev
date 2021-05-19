@@ -14,6 +14,4 @@ export function getPosts() {
   })
 
   return posts.sort((a, b) => a.data.experiment - b.data.experiment)
-
-  return posts
 }

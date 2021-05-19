@@ -2,19 +2,19 @@
   export function load({ error, status }) {
     return {
       props: { error, status }
-    };
+    }
   }
 </script>
 
 <script>
-  import { dev } from '$app/env';
+  import { dev } from '$app/env'
 
-  export let status;
-  export let error;
+  export let status
+  export let error
 
-  const offline = typeof navigator !== 'undefined' && navigator.onLine === false;
-  const title = offline ? 'Offline' : status;
-  const message = offline ? 'Find the internet and try again' : error.message;
+  const offline = typeof navigator !== 'undefined' && navigator.onLine === false
+  const title = offline ? 'Offline' : status
+  const message = offline ? 'Find the internet and try again' : error.message
 </script>
 
 <svelte:head>

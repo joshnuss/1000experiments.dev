@@ -2,22 +2,22 @@
   import SignupForm from '$lib/components/SignupForm.svelte'
   import { findPost } from '$lib/posts'
 
-  export async function load({ page, fetch }) {
-		const post = findPost(page.path.split("/")[2])
+  export async function load({ page }) {
+    const post = findPost(page.path.split('/')[2])
 
-		if (!post) {
-			return {
-				status: 404,
-				error: new Error('Post could not be found')
-			}
-		}
+    if (!post) {
+      return {
+        status: 404,
+        error: new Error('Post could not be found')
+      }
+    }
 
-		return {
-			props: {
-				post
-			}
-		}
-	}
+    return {
+      props: {
+        post
+      }
+    }
+}
 </script>
 
 <script>
@@ -26,9 +26,10 @@
   import Tags from '$lib/components/Tags.svelte'
   export let post
 
+  /* eslint-disable no-undef */
   onMount(() => {
     if (typeof(twttr) !== 'undefined')
-      twttr.widgets.load();
+      twttr.widgets.load()
   })
 </script>
 
@@ -46,7 +47,7 @@
     Experiment #{post.experiment}
   </span>
   ●
-  <span class="date">{format(post.date, "do MMMM, yyyy")}</span>
+  <span class="date">{format(post.date, 'do MMMM, yyyy')}</span>
   ●
   <span class="author">by <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
 </p>
