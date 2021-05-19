@@ -8,6 +8,6 @@ yarn-error.log
 /static/images/*.mp4
 /static/images/*.png
 
-.now
-.vercel
+/.vercel
+/.vercel_build_output
 /.svelte-kit
