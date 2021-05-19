@@ -2,7 +2,7 @@
 title: Playback selections with CodeMirror
 experiment: 4
 date: "2021-02-28"
-permalink: codemirror-selection
+permalink: codemirror-selections
 tags: animation, svelte, code-video
 ---
 

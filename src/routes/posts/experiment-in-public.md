@@ -1,10 +1,10 @@
 ---
 title: Experimenting in Public
-tags: thoughts
 experiment: 1
 summary: The first experiment is experimenting in public
 date: "2021-02-27"
-permalink: experimenting-in-public
+permalink: experiment-in-public
+tags: thoughts
 ---
 
 The first experiment is this site, ie. experimenting in public.

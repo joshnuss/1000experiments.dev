@@ -1,16 +1,3 @@
-<script>
-
-  // export let segment
-</script>
-
-<header>
-  <div class="topper"/>
-</header>
-
-<main>
-  <slot></slot>
-</main>
-
 <footer>
   <div class="container">
     <div class="links">
@@ -25,15 +12,6 @@
 </footer>
 
 <style>
-  main {
-    position: relative;
-    background-color: white;
-    padding: 2em 10px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    min-height: calc(100vh - 143px);
-  }
-
   footer {
     color: #888;
     background-color: var(--dark-color);
@@ -63,13 +41,6 @@
   footer a:hover {
     color: var(--highlight-color)
   }
-
-  .topper {
-    height: 8px;
-    width: 100%;
-    background: var(--alternate-color);
-  }
-
 
   @media (min-width: 500px) {
     footer .container {

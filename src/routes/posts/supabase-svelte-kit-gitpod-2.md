@@ -25,9 +25,9 @@ tasks:
   - init: npm install
     command: |
       (
-        RED='\033[0;31m'
-        BOLD='\033[1;30m'
-        NC='\033[0m' # No Color
+        RED='\\033[0;31m'
+        BOLD='\\033[1;30m'
+        NC='\\033[0m' # No Color
 
         # check if VITE_SUPABASE_URL is defined
         gp env | grep --quiet VITE_SUPABASE_URL

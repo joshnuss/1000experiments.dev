@@ -1,8 +1,9 @@
-const {format} = require('date-fns')
-const fs = require('fs')
-const read = require('read')
-const child_process = require('child_process')
-const getPosts = require('./posts.js')
+import {format} from 'date-fns'
+import fs from 'fs'
+import read from 'read'
+import child_process from 'child_process'
+import {getPosts} from './posts.js'
+
 const experiment = lastExperiment() + 1
 const permalink = process.argv[2]
 
@@ -70,7 +71,7 @@ function prompt(callback) {
 }
 
 prompt((title, tags, assetUrl, codeUrl) => {
-  const path = `posts/${experiment}-${permalink}.md`
+  const path = `src/routes/posts/${permalink}.md`
   const template = generate({
     title,
     experiment,

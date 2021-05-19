@@ -4,7 +4,7 @@
 
 {#each posts as post}
   <article>
-    <a href={`/posts/${post.permalink}`}>
+    <a href={`/posts/${post.permalink}`} sveltekit:prefetch>
       <h2>#{post.experiment} - {post.title}</h2>
     </a>
   </article>

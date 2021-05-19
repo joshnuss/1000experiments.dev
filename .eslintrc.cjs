@@ -5,15 +5,15 @@ module.exports = {
     node: true,
   },
   plugins: ['svelte3'],
-  ignorePatterns: ["__sapper__/", "node_modules/"],
-  extends: "eslint:recommended",
+  ignorePatterns: ['__sapper__/', 'node_modules/'],
+  extends: 'eslint:recommended',
   globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
-    ecmaVersion: 2019,
-    sourceType: "module"
+    ecmaVersion: 2020,
+    sourceType: 'module'
   },
   overrides: [
     {
@@ -23,20 +23,20 @@ module.exports = {
   ],
   rules: {
     indent: [
-      "error",
+      'error',
       2
     ],
-    "linebreak-style": [
-      "error",
-      "unix"
+    'linebreak-style': [
+      'error',
+      'unix'
     ],
     quotes: [
-      "error",
-      "single"
+      'error',
+      'single'
     ],
     semi: [
-      "error",
-      "never"
+      'error',
+      'never'
     ]
   }
 }

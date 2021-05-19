@@ -3,7 +3,7 @@ title: Animating Input Selections
 experiment: 2
 summary: Recording text selections and playing them back
 date: "2021-02-27"
-permalink: recording-and-animating-input-selections
+permalink: animating-selection
 tags: animation, svelte, code-video
 ---
 
