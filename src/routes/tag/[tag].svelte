@@ -1,11 +1,13 @@
 <script context="module">
-  import { findByTag } from '$/posts'
+  import { findByTag } from '$lib/posts'
 
-  export function load(page) {
+  export function load({page}) {
     const { tag } = page.params
     const posts = findByTag(tag)
 
-    return { tag, posts }
+    return {
+      props: { tag, posts }
+    }
   }
 </script>
 
