@@ -2,7 +2,7 @@
 title: Google Ads
 experiment: 103
 date: "2021-04-04"
-permalink: google-ads
+permalink: google-a-d-s
 tags: marketing
 ---
 
