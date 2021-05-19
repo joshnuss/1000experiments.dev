@@ -1,15 +1,21 @@
-import _ from 'lodash'
 import { parse } from 'date-fns'
 
 const all = import.meta.globEager("../routes/posts/*.md")
 
-export const posts = _.chain(all)
+export const posts = Object
+  .values(all)
   .map(transform)
-  .orderBy(['experiment', 'date'], 'desc')
-  .value()
+  .sort((a, b) => {
+    if (a.experiment > b.experiment)
+      return -1
+    if (b.experiment < a.experiment)
+      return 1
+
+    return 0
+  })
 
 export function findPost(permalink) {
-  return _.find(posts, {permalink})
+  return posts.find(post => post.permalink === permalink)
 }
 
 export function findByTag(tag) {

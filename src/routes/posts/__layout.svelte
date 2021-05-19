@@ -51,7 +51,7 @@
   <span class="author">by <a href="https://twitter.com/joshnuss">Joshua Nussbaum</a></span>
 </p>
 
-<div class="content" use:highlight>
+<div class="content">
   <slot/>
 </div>
 
