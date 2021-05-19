@@ -26,10 +26,6 @@ It's all done now! and I'm loving it. Now I have a good base for updating the de
 
 [View pull request](https://github.com/joshnuss/1000experiments.dev/pull/7)
 
-## Demo
-
-<img alt="animation" src=""/>
-
 ## Notes
 
 - Remove `markdown`, `frontmatter` npm packages. Use whatever `mdsvex` uses or `import.meta.globEager()`
