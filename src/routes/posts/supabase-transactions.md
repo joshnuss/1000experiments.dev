@@ -55,7 +55,7 @@ await supabase
   .from('products')
   .insert({...})
 
-// WS aPI
+// WS API
 await supabase.transaction(async tx => {
   await tx
     .from('products')
@@ -73,10 +73,6 @@ await supabase.transaction(async tx => {
 ## Code
 
 https://github.com/joshnuss/supa-mini/commit/947787b000f28c1c094d95bfe042b26fe68c913e
-
-## Demo
-
-<img alt="animation" src=""/>
 
 ## Notes
 
