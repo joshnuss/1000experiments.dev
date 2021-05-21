@@ -44,6 +44,10 @@ a {
   text-decoration-thickness: 3px;
 }
 
+h1 a, h2 a, h3 a {
+  text-decoration: none;
+}
+
 pre {
   border-radius: 8px;
   background: #f7f7f7;
