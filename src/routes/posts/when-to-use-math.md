@@ -6,13 +6,21 @@ permalink: when-to-use-math
 tags: math
 ---
 
-When I was taught math, they always seemed to focus on the "how". How to multiple numbers. How to use calculus. The focus was always on techniques, rather than the "why" and the "when".
+When I was taught math, the focus was mostly on the "how":
 
-Especially in this day and age, where computers can solve so many mathematical problems, it feels like "why" and "when" are even more important. If we know why&when we can always navigate to the solution or find resources that teach "how". But if we only know "how", were like a baker than only knows one way to bake bread, we're kind of blind to what's possible.
+**How** to multiply numbers.
+**How** to work with fractions.
+**How** to use calculus.
 
-So I thought it would be a usefil to list some different math concepts and a short definition of when you should use them.
+They were obsessed with teaching us the techniques, rather than the "why" and the "when".
 
-It's basically just me running a bunch of google searches for "when should I use \<term\>" and noting them here.
+Nowadays, where computers can solve so many mathematical problems, it feels like knowing "why" and "when" are even more important. When we know "why" & "when" we can always navigate to the solution or find resources that teach the "how".
+
+Knowing "how" is like knowing how to use a hammer. It's helpful, but not all situations require a hammer. To select the best tool for the job, we need to know "why" and "when" each tool should be used.
+
+So I thought it would be a usefil to catalog some different math concepts and a short definition of when you should use them.
+
+It's basically just me running a bunch of google searches for "when should I use X", and noting them here.
 
 ## Addition
 
