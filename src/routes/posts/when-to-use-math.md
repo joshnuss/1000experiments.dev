@@ -46,7 +46,7 @@ Breaking a set of items into parts.
 
 ### Fractions
 
-Working with quantity that can be less than a single unit.
+Working with partial units.
 
 ### Exponents
 
