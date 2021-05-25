@@ -22,13 +22,11 @@ But even more useful is to know the **when**:
 
 Especially nowadays, where computers can solve so many mathematical problemsfor us, knowing "when" is even more important because it allows us to navigate through many possible solutions and locate the resources to teach us "how".
 
-You could say that knowing "how" is a lot like knowing how to use a hammer. Sure it's nice to know how to bang in a nail without jamming your thumbs, but not all situations require a hammer. To select the best tool for the job, we need to know "when" each tool should (or shouldn't) be used.
+You could say that knowing "how" is a lot like knowing how to use a hammer. Sure it's nice to know how to bang in a nail without whacking your thumbs, but not all situations require a hammer. To select the best tool for the job, we need to know "when" each tool should (or shouldn't) be used.
 
 ## Math catalog
 
-So I thought it would be a useful to catalog some math concepts with a short definition of when you should use it.
-
-It's basically just me running a bunch of Google searches for "when should I use X", and noting them here.
+So I ran a bunch of Google searches for "when should I use \<math concept\>?", and put together a list:
 
 ### Addition
 
