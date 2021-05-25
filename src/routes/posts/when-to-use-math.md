@@ -55,7 +55,7 @@ Describing how multiple variables relate to each other.
 
 ### Geometry
 
-Visualize math with drawings.
+Visualizing math with drawings.
 
 ### Logarithms
 
