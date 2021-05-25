@@ -43,7 +43,7 @@ Breaking a set of items into parts.
 
 ### Fractions
 
-When the quantity is less than a single unit. eg. slice of pizza vs. a bite of pizza. If a slice is a single unit, then a bite is a fraction of a slice.
+Working with quantity that can be less than a single unit.
 
 ### Exponents
 
