@@ -8,9 +8,10 @@ tags: math
 
 When I was taught math, the focus was mostly on the "how":
 
-**How** to multiply numbers.
-**How** to work with fractions.
-**How** to use calculus.
+- **How** to multiply numbers.
+- **How** to work with fractions.
+- **How** to use calculus.
+- etc..
 
 They were obsessed with teaching us the techniques, rather than the "why" and the "when".
 
