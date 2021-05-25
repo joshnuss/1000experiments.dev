@@ -20,9 +20,9 @@ But even more useful is to know the **when**:
 - **When** to use calculus.
 - etc..
 
-Knowing "how" is like knowing how to use a hammer. Sure it's nice to know how to bang in a nail without whacking your thumbs, but not all situations require a hammer. To select the best tool for the job, we need to know "when" each tool should (or shouldn't) be used.
+Knowing how to use a math concept is like knowing how to use a hammer. It's nice to know how to bang in a nail without whacking your thumbs and sending yourself to the hospital, but not all situations require a hammer. To select the best tool for the job, we need to know "when" each tool should (or shouldn't) be used.
 
-Especially nowadays, where computers can solve so many mathematical problems for us, knowing "when" allows us to navigate through the possible tools. Once we select a tool, it's easy to find the resources to teach us the "how" part.
+Especially nowadays, where computers can solve so many mathematical problems for us, knowing "when" allows us to navigate through the possible tools. Once we select the right tool, it's easy to find the resources to teach us the "how" part.
 
 ## Math catalog
 
