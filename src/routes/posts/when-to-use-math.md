@@ -85,6 +85,6 @@ Finding aproximate solutions to equations.
 
 Gathering, reviewing, analyzing, and drawing conclusions from data.
 
-## Machine learning
+### Machine learning
 
 Extracting algorithms from data.
