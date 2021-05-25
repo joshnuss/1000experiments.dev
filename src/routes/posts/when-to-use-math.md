@@ -36,19 +36,19 @@ Repeating a set of items.
 
 ## Division
 
-Breaking a set of items into equal parts.
+Breaking a set of items into parts.
 
-## Fraction
+## Fractions
 
-When the quantity is less than a single unit. eg. slice of pizza vs a bite of pizza, if a slice is a single unit, then a bite is a fraction of a slice.
+When the quantity is less than a single unit. eg. slice of pizza vs. a bite of pizza. If a slice is a single unit, then a bite is a fraction of a slice.
 
 ## Exponents
 
-Abbreviate large numbers.
+Abbreviating large numbers.
 
 ## Equation & Formulas
 
-Describe how multiple variables relate to each other. 
+Describing how multiple variables relate to each other.
 
 ## Geometry
 
@@ -56,7 +56,7 @@ Visualize math with drawings.
 
 ## Logarithms
 
-Scale numbers.
+Scaling numbers.
 
 ## Linear algebra
 
@@ -68,16 +68,16 @@ A language for reasoning.
 
 ## Combinatorics
 
-Find all possible outcomes.
+Finding all possible outcomes.
 
 ## Number theory
 
-Discover relationships between numbers.
+Discovering relationships between numbers.
 
 ## Calculus
 
-Find aproximate solutions to equations.
+Finding aproximate solutions to equations.
 
 ## Statistics
 
-Gather, review, analyze, and draw conclusions from data.
+Gathering, reviewing, analyzing, and drawing conclusions from data.
