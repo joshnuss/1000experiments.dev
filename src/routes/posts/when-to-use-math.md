@@ -17,13 +17,13 @@ They were obsessed with teaching us the techniques, rather than the **why** and 
 
 Nowadays, where computers can solve so many mathematical problems, knowing "why" and "when" are even more important. They allow navigate to the solution and the find resources to teach us "how".
 
-Knowing "how" is like knowing how to use a hammer. It's helpful, but not all situations require a hammer. To select the best tool for the job, we need to know "why" and "when" each tool should be used.
+Knowing "how" is like knowing how to use a hammer. It's helpful, but not all situations require a hammer. To select the best tool for the job, we need to know "why" and "when" each tool should (or shouldn't) be used.
 
 ## Math catalog
 
-So I thought it would be a usefil to catalog some different math concepts and a short definition of when you should use them.
+So I thought it would be a useful to catalog some math concepts with a short definition of when you should use it.
 
-It's basically just me running a bunch of google searches for "when should I use X", and noting them here.
+It's basically just me running a bunch of Google searches for "when should I use X", and noting them here.
 
 ### Addition
 
@@ -84,3 +84,7 @@ Finding aproximate solutions to equations.
 ### Statistics
 
 Gathering, reviewing, analyzing, and drawing conclusions from data.
+
+## Machine learning
+
+Extracting algorithms from data.
