@@ -13,11 +13,16 @@ When I was taught math, the focus was mostly on the "how":
 - **How** to use calculus.
 - etc..
 
-They were obsessed with teaching us the techniques, rather than the **why** and the **when**.
+But even more useful is to know the **when**:
 
-Nowadays, where computers can solve so many mathematical problems, knowing "why" and "when" are even more important. They allow navigate to the solution and the find resources to teach us "how".
+- **When** to multiply numbers.
+- **When** to work with fractions.
+- **When** to use calculus.
+- etc..
 
-Knowing "how" is like knowing how to use a hammer. It's helpful, but not all situations require a hammer. To select the best tool for the job, we need to know "why" and "when" each tool should (or shouldn't) be used.
+Especially nowadays, where computers can solve so many mathematical problemsfor us, knowing "when" is even more important because it allows us to navigate through many possible solutions and locate the resources to teach us "how".
+
+You could say that knowing "how" is a lot like knowing how to use a hammer. Sure it's nice to know how to bang in a nail without jamming your thumbs, but not all situations require a hammer. To select the best tool for the job, we need to know "when" each tool should (or shouldn't) be used.
 
 ## Math catalog
 
