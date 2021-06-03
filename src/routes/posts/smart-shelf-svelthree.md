@@ -23,6 +23,6 @@ https://svelthree.dev/repl/2d0433e175bd43b4bd1b1ecb248e0854?version=3.38.2
 ## Notes
 
 - The texture should have an image for each of the 6 sides of the book. Front, back, side, etc..
-- Highlight book
-- If there are many books (ie some are offscreen), show arrows
+- Highlight the book(s) you are searching for.
+- If there are many books (ie some are offscreen), show arrows to pan.
 - Integrate with AR using fiducial markers. The fiducials will go on the shelf corners.
