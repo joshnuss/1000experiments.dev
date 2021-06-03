@@ -10,8 +10,7 @@ Continuing with my [idea for an AR bookshelf](/posts/smart-shelf).
 
 I started looking into what it would take to use AR with [three.js](https://threejs.org/). There are some [good example here](https://threejs.org/examples/?q=xr#webxr_ar_lighting).
 
-For today, I started with just setting up the 3D scene and making a cube look like a book by painting it with a texture.
-
+For today, I started with just setting up the 3D scene using [svelthree](https://svelthree.dev) and making a cube look like a book by painting it with an image texture.
 
 ## Code
 
