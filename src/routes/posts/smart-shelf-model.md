@@ -10,6 +10,10 @@ Before I can record the dimensions and placement of each book, I need the dimens
 
 In my living room I have an [Ikea Kallax Bookshelf](https://www.ikea.com/ca/en/p/kallax-shelf-unit-black-brown-10275862), so I will create a 3D model using [OpenSCAD](https://openscad.org/), and then load it using [Three.js](https://threejs.org).
 
+## Screenshot
+
+<img alt="animation" src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1623303234/1000experiments.dev/kallax-3d-model_bf5r3u.png"/>
+
 ## Code
 
 OpenScad code for shelf model:
@@ -58,8 +62,3 @@ union() {
   }
 }
 ```
-
-
-## Demo
-
-<img alt="animation" src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1623303234/1000experiments.dev/kallax-3d-model_bf5r3u.png"/>
