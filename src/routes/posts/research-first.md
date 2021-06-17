@@ -12,7 +12,13 @@ But if you're creating a business, solution-first is a "build it an they will co
 
 There's no promise that if you solve a problem someone will pay for it.
 
-It might be better to find a problem first. With problem-first we know the friction exists in the real world, and we know we have access to people that have the problem. Whereas with a solution-first approach, it's very easy to build solutions without having access to an audience that wants to buy it.
+## Problem-first
+
+It might be better to find a problem first.
+
+Then we know the friction exists in the real world, and that we have access to people with the problem.
+
+Whereas with the solution-first approach, it's very easy to build solutions without having access to an audience that wants to buy it. We don't know if they're trully needed or if we have access to buyers.
 
 ## Experiment
 
