@@ -36,4 +36,4 @@ Next I'll have to implement to query packets (which will probably be a lot harde
 
 ## Note
 
-- Though it was hard to put this together, it was fun to have dive into a bunch of codebases. I had to look at the [Python](https://github.com/mymarilyn/clickhouse-driver) driver, [Go](https://github.com/ClickHouse/clickhouse-go) driver, and the [C++](https://github.com/ClickHouse/ClickHouse/blob/master/src/Client/Connection.cpp) code.
+- Though it was hard to put this together, it was fun to dive into a bunch of complex codebases. I had to look at the [Python](https://github.com/mymarilyn/clickhouse-driver) driver, [Go](https://github.com/ClickHouse/clickhouse-go) driver, and the [C++](https://github.com/ClickHouse/ClickHouse/blob/master/src/Client/Connection.cpp) code.
