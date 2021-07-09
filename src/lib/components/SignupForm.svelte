@@ -2,7 +2,7 @@
 <div id="mc_embed_signup">
   <form action="https://dev.us1.list-manage.com/subscribe/post?u=83aad09119a3654a819eec75c&amp;id=7768a23f02" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-      <h2>Stay in the loop</h2>
+      <h2>Stay tuned in</h2>
       <p>Learn how to add more experimentation to your workflow</p>
       <div class="stack">
         <div class="wrapper">
