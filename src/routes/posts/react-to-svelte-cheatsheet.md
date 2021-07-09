@@ -6,7 +6,7 @@ permalink: react-to-svelte-cheatsheet
 tags: react,svelte,course
 ---
 
-For my upcoming course at [newline.co](https://www.newline.co/courses/svelte-for-react-devs), I want to create a helpful piece of content that could be used as a freebie or lead magnet.
+For my upcoming course at [newline.co](https://www.newline.co/courses/svelte-for-react-devs), I need a small but helpful piece of content that could be used as a freebie or lead magnet.
 
 So I put together a "React to Svelte cheatsheet" in Figma.
 
