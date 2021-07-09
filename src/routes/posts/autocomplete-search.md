@@ -6,15 +6,15 @@ permalink: autocomplete-search
 tags: carrierwave, svelte
 ---
 
-Last August, I starting building a startup called [CarrierWave][https://getcarrierwave.com].
+Last August, I starting building a startup called [CarrierWave](https://getcarrierwave.com).
 
-For about 3 months I was working on it full time. Then things slowed down a bit and I started looking into other things.
+For about 3 months I was working on it full time. Then I lost some steam and started looking into other things.
 
-But recently there's been more interest in it, nothing major, but a few people wanted to try it. So I figured I should fix up a few things and maybe I can increase the MRR.
+But recently there's been more interest in it, nothing major, but a few people wanted to try it out. So I figured I should fix up a few things and maybe I can increase the MRR.
 
 Right now MRR is at $200/mo, I'd like to try to get it up to $1K/mo.
 
-So I decided to spend a few experiments looking at adding some new things to it.
+So I decided to spend a few experiments looking at adding some new features to it.
 
 ## Search
 
@@ -29,7 +29,3 @@ https://svelte.dev/repl/f5e18d6641be4d7ab0324fedb2991c08?version=3.38.3
 ## Demo
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1625817098/1000experiments.dev/auto-complete-search-box_hek7fu.mp4"/>
-
-## Notes
-
--
