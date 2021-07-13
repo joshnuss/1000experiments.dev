@@ -27,7 +27,7 @@ Carts are broken down by carrier in bar chart format:
 
 ## Demo
 
-Can't share the Svelte REPL for this because it contains tailwind-ui.
+Can't share the Svelte REPL for this because it contains tailwind-ui (paid product).
 
 <img alt="animation" src="https://res.cloudinary.com/dzwnkx0mk/image/upload/v1626164409/1000experiments.dev/Screenshot_from_2021-07-13_04-19-32_kzmcwo.png"/>
 
