@@ -38,3 +38,4 @@ Can't share the Svelte REPL for this because it contains tailwind-ui.
   - parcel class info (UPS 2-day, USPS First-class mail etc..)
 - Add a date range picker component
 - Build out a backend
+- Add tooltip using hover/touch to bar chart
