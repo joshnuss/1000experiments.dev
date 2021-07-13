@@ -88,6 +88,10 @@ pre code {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
+.content ul ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 @media (min-width: 400px) {
   body {
