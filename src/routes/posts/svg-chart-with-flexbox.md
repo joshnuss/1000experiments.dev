@@ -22,4 +22,5 @@ https://svelte.dev/repl/ba2ae9582dba4d1c9d86ab145d1706b8?version=3.38.3
 
 ## Notes
 
-- Does this work in non-chrome browsers
+- Does this work in non-chrome browsers?
+- Does it work with really tall content?
