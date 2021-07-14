@@ -13,7 +13,7 @@ I found this great [example from Dana Woodman](https://dev.to/danawoodman/svelte
 I made a few adjustments to it for my use case:
 
 - **SVG compatibility**: Want to use this for an SVG change, but with an svg element, accessing the title view accessor, ie `node.title`, is not possible. Switched it to `node.getAttribute('title')`/`node.setAttribute('title', ...)` to fix it
-- **Binding content**: When content is bound to a variable, for example `use:tooltip={{content: someVar}}`, when `someVar` changes, we want to update the underlying tooltip content. This is especially important when using content bound to a DOM element, ie `use:tooltip={{content: someDomElement}}`, because `someDomElement` might not be defined when the action is first run.
+- **Bound content**: When content is bound to a variable, for example `use:tooltip={{content: someVar}}`, when `someVar` changes, we want to update the underlying tooltip content. This is especially important when using content bound to a DOM element, ie `use:tooltip={{content: someDomElement}}`, because `someDomElement` might not be defined when the action is first run.
 
 ## Code
 
