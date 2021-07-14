@@ -6,11 +6,11 @@ permalink: svg-chart-with-flexbox
 tags: svg, chart, svelte
 ---
 
-While [adding charts](/posts/carrierwave-charts-plan), I noticed it didn't work correctly with flexbox. I want the bar chart to expand to fill the whole space while maintaining aspect ratio.
+While [adding charts to a project](/posts/carrierwave-charts-plan), I noticed it didn't fill the space correct. I want it to expand to fill the whole space while preserving the aspect ratio.
 
 ## Solution
 
-I set the `perserveAspectRatio` on the `<svg>` to `xMidYMid meet`, the `width` to `100%`. Then I wrapped everything in flexbox, and that seemed to do the trick.
+I set the `perserveAspectRatio` on the `<svg>` to `xMidYMid meet`, the `width` to `100%`. Then I wrapped everything in a flexbox `<div>`, and that seemed to do the trick.
 
 ## Code
 
