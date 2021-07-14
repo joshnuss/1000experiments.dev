@@ -39,3 +39,4 @@ Can't share the Svelte REPL for this because it contains tailwind-ui (paid produ
 - Add a date range picker component
 - Build out a backend
 - Add tooltip using hover/touch to bar chart
+- Add "exception" events to reports
