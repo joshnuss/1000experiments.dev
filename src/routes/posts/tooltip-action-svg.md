@@ -12,8 +12,8 @@ I found this great [example from Dana Woodman](https://dev.to/danawoodman/svelte
 
 I made a few adjustments to it.
 
-- SVG compatibility: With an svg element, accessing the title view accessor, ie `node.title`, is not possible. Switched it to `node.getAttribute('title')`
-- Change aware: When content changes, for example `use:tooltip={{content: someVar}}`, if `someVar` changes we want to update the content. This is especially important when using content bound to an element, ie `use:tooltip={{content: someElement}}`, because `someElement` might not be defined when the action is first setup.
+- **SVG compatibility**: With an svg element, accessing the title view accessor, ie `node.title`, is not possible. Switched it to `node.getAttribute('title')`
+- **Update aware**: When content changes, for example `use:tooltip={{content: someVar}}`, if `someVar` changes we want to update the content. This is especially important when using content bound to an element, ie `use:tooltip={{content: someElement}}`, because `someElement` might not be defined when the action is first setup.
 
 ## Code
 
