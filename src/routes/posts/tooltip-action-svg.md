@@ -6,14 +6,14 @@ permalink: tooltip-action-svg
 tags: svelte, svg
 ---
 
-I found this great [example from Dana Woodman](https://dev.to/danawoodman/svelte-quick-tip-using-actions-to-integrate-with-javascript-libraries-tippy-tooltips-2m94) for adding tooltips with [tippy.js](https://atomiks.github.io/tippyjs/) using Svelte actions.
+I found this great [example from Dana Woodman](https://dev.to/danawoodman/svelte-quick-tip-using-actions-to-integrate-with-javascript-libraries-tippy-tooltips-2m94) for adding tooltips with [tippy.js](https://atomiks.github.io/tippyjs/) and Svelte actions.
 
 ## Adjustments
 
-I made a few adjustments to it.
+I made a few adjustments to it for my use case:
 
-- **SVG compatibility**: With an svg element, accessing the title view accessor, ie `node.title`, is not possible. Switched it to `node.getAttribute('title')`
-- **Update aware**: When content changes, for example `use:tooltip={{content: someVar}}`, if `someVar` changes we want to update the content. This is especially important when using content bound to an element, ie `use:tooltip={{content: someElement}}`, because `someElement` might not be defined when the action is first setup.
+- **SVG compatibility**: Want to use this for an SVG change, but with an svg element, accessing the title view accessor, ie `node.title`, is not possible. Switched it to `node.getAttribute('title')`/`node.setAttribute('title', ...)` to fix it
+- **Binding content**: When content is bound to a variable, for example `use:tooltip={{content: someVar}}`, when `someVar` changes, we want to update the underlying tooltip content. This is especially important when using content bound to a DOM element, ie `use:tooltip={{content: someDomElement}}`, because `someDomElement` might not be defined when the action is first run.
 
 ## Code
 
