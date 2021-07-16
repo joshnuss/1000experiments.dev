@@ -52,7 +52,7 @@ const fileName = 'foo.png'
 
 // create a data transfer object
 const dt = new DataTransfer()
-// add file
+// add file object with name
 dt.items.add(new File([fileEncoded], fileName))
 
 // get the input
