@@ -8,7 +8,7 @@ tags: svelte, javascript, carrierwave
 
 After my last experiment [create an autofill extension](https://1000experiments.dev/posts/chrome-autofill-extension), I wanted to to figure out how to set different input fields programatically.
 
-Most are easy, but setting the file type was a little harder.
+Most are easy, but setting `<input type="file"/>` was a little harder.
 
 ## Text field
 
