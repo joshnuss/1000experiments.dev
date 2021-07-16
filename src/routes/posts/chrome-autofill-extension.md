@@ -23,7 +23,7 @@ I found a useful article for [building an extension with Svelte](https://mauroga
 
 ## Code
 
-There needs to be a [content script](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) that handles receiving messages from the extension. So I defined an `src/contentScript.js` and updated rollup to generate to builds, one for the extension UI, and one for the content script.
+There needs to be a [content script](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) that handles receiving messages from the extension. So I defined an `src/contentScript.js` and updated rollup to generate two builds, one for the extension UI, and one for the content script.
 
 It was just a matter of exporting an array from the `rollup.config.js`:
 
@@ -98,6 +98,8 @@ Then in `src/contentScript.js`:
  */
 
 /*global chrome */
+
+// handle incoming messages
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type == 'set') {
     // update a field with value received from extension 
@@ -106,7 +108,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 })
 ```
 
-Then in the extension, I can send a message from Svelte:
+Then in the extension, I can send messages from Svelte `on:click`:
 
 ```html
 <!-- App.svelte (displayed in extension popup) -->
@@ -120,7 +122,9 @@ Then in the extension, I can send a message from Svelte:
   }
 
   function sendMessage(message) {
+    // find active tab
     chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
+      // send a message to that tab (will always be one)
       chrome.tabs.sendMessage(tabs[0].id, message, (response) => {
         console.log(response.farewell)
       })
@@ -134,6 +138,20 @@ Then in the extension, I can send a message from Svelte:
 ```
 
 ## Demo
+
+I tested by filling out the GitHub searchbar. I added a rule in extensions `manifest.json`:
+
+```js
+// ...
+
+"content_scripts": [
+  {
+    "matches": ["*://*.github.com/*"],
+    "js": ["build/contentScript.js"]
+  }
+],
+
+```
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1626421782/1000experiments.dev/chrome-autofill-extension_fsnff6.mp4"/>
 
