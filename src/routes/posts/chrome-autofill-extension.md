@@ -144,3 +144,4 @@ Then in the extension, I can send a message from Svelte:
   - Support filling in different types of fields: text, select, currenct, file field (PDF, PNG etc..)
   - Detect if on UPS/USPS/FedEx/DHL website
   - Starting process should ensure user is logged in to carrier site, or instruct them to.
+  - Create a compelling video demo to be shared with prospects to ensure idea is viable
