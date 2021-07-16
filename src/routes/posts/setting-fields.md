@@ -28,7 +28,7 @@ document.querySelector(`select[name=${fieldName}]`).value = newValue
 
 ## Checkbox
 
-Similar to other input, except instead of setting the `.value` attribute, it uses `.checked` instead:
+Similar to other inputs, except instead of setting the `.value` attribute, it uses `.checked`:
 
 ```javascript
 document.querySelector(`input[type=checkbox][name=${fieldName}]`).checked = boolean 
