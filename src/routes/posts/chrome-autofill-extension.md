@@ -163,3 +163,4 @@ I tested by filling out the GitHub searchbar. I added a rule in extensions `mani
   - Detect if on UPS/USPS/FedEx/DHL website
   - Starting process should ensure user is logged in to carrier site, or instruct them to.
   - Create a compelling video demo to be shared with prospects to ensure idea is viable
+  - Filling a batch, ie looping thru the screens until all claims are filed
