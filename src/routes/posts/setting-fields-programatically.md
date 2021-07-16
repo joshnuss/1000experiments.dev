@@ -2,7 +2,7 @@
 title: Settings fields programatically
 experiment: 212
 date: "2021-07-16"
-permalink: setting-fields
+permalink: setting-fields-programatically
 tags: svelte, javascript, carrierwave
 ---
 
