@@ -48,7 +48,7 @@ To load it into the `<input type="file"/>`:
 
 ```javascript
 // split on comma to remove the first part "data:image/png;base64,"
-const fileEncoded = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlcAAACVC.....'.split(',')[0]
+const fileEncoded = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlcAAACVC.....'.split(',')[1]
 // set a filename
 const fileName = 'foo.png'
 
