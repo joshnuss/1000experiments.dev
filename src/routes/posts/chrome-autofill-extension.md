@@ -27,7 +27,7 @@ There needs to be a [content script](https://developer.chrome.com/docs/extension
 
 It was just a matter of exporting an array from the `rollup.config.js`:
 
-```javascipt
+```javascript
 // rollup.config.js
 const extension = {
   input: 'src/extension.js',
