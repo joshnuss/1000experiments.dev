@@ -8,7 +8,7 @@ tags: svelte, carrierwave, tailwind
 
 To build out my [chrome extension for filing claims](https://1000experiments.dev/posts/chrome-autofill-extension), I need a test bed I can use.
 
-I can't use a real account, so I created a fake USPS claim form with svelte and tailwind.
+I can't use a real account, so I created a fake USPS claim form with svelte and tailwind (see below).
 
 ## Code
 
