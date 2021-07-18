@@ -390,6 +390,77 @@ Then when the user clicks "submit" in the extension:
 {/each}
 ```
 
+In the content script, I handle the messages:
+
+```javascript
+// src/contentScript.js
+
+/*
+ * this runs in the context of the page
+ * and receives messages from the extension
+ */
+
+/*global chrome */
+console.log('AutoFill extension loaded')
+
+function dataURLtoBlob(dataurl) {
+  let arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+    bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n)
+
+  while(n--){
+    u8arr[n] = bstr.charCodeAt(n)
+  }
+
+  return new Blob([u8arr], {type:mime})
+}
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log('Received', message)
+
+  switch (message.type) {
+  case 'open':
+    location.href = message.url
+    sendResponse(true)
+    break
+  case 'input':
+    document.querySelector(`input[name=${message.field}]`).value = message.value
+    sendResponse(true)
+    break
+  case 'textarea':
+    document.querySelector(`textarea[name=${message.field}]`).value = message.value
+    sendResponse(true)
+    break
+  case 'radio':
+    document.querySelector(`input[name=${message.field}][value=${message.value}]`).checked = true
+    sendResponse(true)
+    break
+  case 'select':
+    document.querySelector(`select[name=${message.field}]`).value = message.value
+    sendResponse(true)
+    break
+  case 'file':
+    const dt = new DataTransfer()
+
+    message.files.forEach(file => {
+      const blob = dataURLtoBlob(file.data)
+      dt.items.add(new File([blob], file.name))
+    })
+
+    const input = document.querySelector(`input[type=file][name=${message.field}]`)
+    input.files = dt.files
+    input.dispatchEvent(new Event('change'))
+
+    sendResponse(true)
+
+    break
+  case 'submit':
+    document.querySelector('form').dispatchEvent(new Event('submit'))
+    sendResponse(true)
+    break
+  }
+})
+```
+
 ## Demo
 
 <video controls src="https://res.cloudinary.com/dzwnkx0mk/video/upload/v1626598075/1000experiments.dev/autofill-filing-single-claim_kuzzzp.mp4"/>
