@@ -3,7 +3,7 @@ title: "Claim AutoFill: UI"
 experiment: 214
 date: "2021-07-18"
 permalink: autofill-claim-ui
-tags: carrierwave, svelte, tailwind
+tags: carrierwave, svelte, tailwind, claim-extension
 ---
 
 I added a UI for my [AutoFill chrome extension](/posts/chrome-autofill-extension) using Tailwind/TailwindUI.

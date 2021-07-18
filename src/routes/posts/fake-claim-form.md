@@ -3,7 +3,7 @@ title: "Claim AutoFill: Fake claim form"
 experiment: 213
 date: "2021-07-17"
 permalink: fake-claim-form
-tags: svelte, carrierwave, tailwind
+tags: svelte, carrierwave, tailwind, claim-extension
 ---
 
 To build out my [chrome extension for filing claims](https://1000experiments.dev/posts/chrome-autofill-extension), I need a test bed I can use.

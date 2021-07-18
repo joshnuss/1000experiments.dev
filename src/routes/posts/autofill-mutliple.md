@@ -3,7 +3,7 @@ title: "Claim AutoFill: Filing multiple claims at once"
 experiment: 216
 date: "2021-07-18"
 permalink: autofill-mutliple
-tags: carrierwave, svelte
+tags: carrierwave, svelte, claim-extension
 ---
 
 In the [last experiment](/posts/autofill-single-claim), I added the ability to submit a single claim.

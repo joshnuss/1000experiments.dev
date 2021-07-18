@@ -3,7 +3,7 @@ title: "Claim AutoFill: Filing a single claim"
 experiment: 215
 date: "2021-07-18"
 permalink: autofill-single-claim
-tags: carrierwave, svelte
+tags: carrierwave, svelte, claim-extension
 ---
 
 Continuing on with my [claim autofill chrome extension](/posts/chrome-autofill-extension), I got it to the point where it can fill out the entire form.

@@ -3,7 +3,7 @@ title: "Claim AutoFill: Settings fields programatically"
 experiment: 212
 date: "2021-07-16"
 permalink: setting-fields-programatically
-tags: svelte, javascript, carrierwave
+tags: svelte, javascript, carrierwave, claim-extension
 ---
 
 After my last experiment [create an autofill extension](https://1000experiments.dev/posts/chrome-autofill-extension), I wanted to to figure out how to set different input fields programatically.

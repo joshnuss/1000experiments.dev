@@ -3,7 +3,7 @@ title: "Claim AutoFill: Chrome extension"
 experiment: 211
 date: "2021-07-16"
 permalink: chrome-autofill-extension
-tags: svelte, chrome, carrierwave
+tags: svelte, chrome, carrierwave, claim-extension
 ---
 
 As I talk with more customers, many say that filing claims with carriers is pretty painful. When packages are damaged, late or lost it requires a ton of manual data entry to file claims.
