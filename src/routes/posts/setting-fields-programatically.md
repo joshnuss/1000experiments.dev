@@ -34,6 +34,14 @@ Similar to other inputs, except instead of setting the `.value` attribute, it us
 document.querySelector(`input[type=checkbox][name=${fieldName}]`).checked = boolean 
 ```
 
+## Redio button
+
+Similar to checkbox, except there are multiple inputs with the same `name`, so the selector requires the `value` as well:
+
+```javascript
+document.querySelector(`input[name=${fieldName}][value=${value}]`).checked = true
+```
+
 ## Files
 
 This one was a bit tricky. It required converting to files to base64 URLs and using `DataTransfer` objects.
@@ -65,3 +73,11 @@ input.files = dt.files
 ```
 
 Tricky, but it works!
+
+## Submitting the form
+
+Use `dispatchEvent()` to submit the form:
+
+```javascript
+document.querySelector('form').dispatchEvent(new Event('submit'))
+```
