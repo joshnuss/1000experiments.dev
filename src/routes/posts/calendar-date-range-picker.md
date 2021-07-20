@@ -18,7 +18,7 @@ Once you know the first day of the month, you can interate through all the days 
 ```html
 <script>
   import { createEventDispatcher } from 'svelte'
-	import { getDay, getDaysInMonth, add } from 'date-fns'
+  import { getDay, getDaysInMonth, add } from 'date-fns'
 
   export let year, month
 
@@ -29,14 +29,14 @@ Once you know the first day of the month, you can interate through all the days 
   // reactive statements, in case `year` or `month` change
   $: firstOfMonth = new Date(year, month, 1)
 
-	$: {
-		dates =  []
+  $: {
+    dates =  []
 
-		for (let i=0;i<getDaysInMonth(firstOfMonth); i++) {
+    for (let i=0;i<getDaysInMonth(firstOfMonth); i++) {
       const date = add(firstOfMonth, {days: i})
-			dates.push(date)
-		}
-	}
+      dates.push(date)
+    }
+  }
 
   function select(date) {
     dispatch('select', date)
@@ -76,7 +76,7 @@ Once you know the first day of the month, you can interate through all the days 
 
 When the user clicks a cell, it figures out how to update the selection:
 
-- **First selection**: set `selection` to a single day. that means setting `start` and `end` to the same date.
+- **First time selection**: sets `selection` to a single day. That means setting `start` and `end` to the same thing.
 - **Second selection**: if the selection is prior the `start`, the selection is extended left, if it's after the `end`, it's extended right.
 - **Toggling**: clicking on an already selected date (start or end), clears the selection back to a single-date selection.
 
