@@ -92,3 +92,4 @@ https://svelte.dev/repl/8de01014756c4e219c3da1521ef3304a?version=3.38.3
 
 - Most of this should be in a dropdown. The dropdown should show the humanized text of the date range (ie "Past 30 days"), and the drop down would show two months at a time. With arrows to move left or right
 - Selecting in the future should have an option to be disabled, because it's not needed for reports.
+- It when you move over a date, it should update the highlighting based on teh projected selection. Right now it only updates the styles **after** the selection is made.
