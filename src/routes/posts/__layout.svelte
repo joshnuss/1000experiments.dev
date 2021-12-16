@@ -1,4 +1,5 @@
 <script context="module">
+  import SEO from 'svelte-seo'
   import SignupForm from '$lib/components/SignupForm.svelte'
   import { findPost } from '$lib/posts'
 
@@ -37,6 +38,26 @@
   <title>Experiment #{post.experiment}: {post.title}</title>
   <meta name="keywords" content={post.tags.join(',')}/>
 </svelte:head>
+
+<SEO
+  title="Experiment #{post.experiment}: {post.title}"
+  keywords={post.tags.join(',')}
+  twitter={{
+    site: "@joshnuss",
+    title: post.title,
+    description: `Experiment #${post.experiment}`
+  }}
+  openGraph={{
+    title: post.title,
+    type: "article",
+    url: post.url,
+    article: {
+      publishedTime: post.date,
+      modifiedTime: post.timestamp,
+      tags: post.tags
+    }
+  }}
+/>
 
 <a href="/">Experiments</a> &gt;
 

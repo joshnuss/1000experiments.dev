@@ -26,6 +26,7 @@ function transform({metadata}) {
   if (!metadata.permalink) throw new Error('Missing permalink')
   if (!metadata.date) throw new Error('Missing date')
 
+  const url = `https://1000experiments.dev/posts/${metadata.permalink}`
   const date = parse(metadata.date, 'yyyy-MM-dd', new Date())
   let tags = []
 
@@ -33,5 +34,5 @@ function transform({metadata}) {
     tags = metadata.tags.split(',').map(str => str.trim())
   }
 
-  return {...metadata, date, tags}
+  return {...metadata, url, date, tags}
 }
