@@ -8,15 +8,15 @@ Every day I do 3 experiments and record them here.
 
 ## Scripts
 
-### yarn record
+### npm run record
 
 Generate a post template for an experiment.
 
-### yarn upload
+### npm run upload
 
 Open Cloudinary folder.
 
-### yarn deploy
+### npm run deploy
 
 Deploy site to vercel.
 
