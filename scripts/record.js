@@ -59,7 +59,9 @@ ${assetUrl && assetUrl.endsWith('.mp4') ? `<video controls src="${assetUrl}"/>` 
 }
 
 function prompt(callback) {
-  read({prompt: 'title:'}, function (err, title) {
+  const defaultTitle = capitalize(permalink.replace(/-/g, ' '))
+
+  read({prompt: 'title:', default: defaultTitle}, function (err, title) {
     read({prompt: 'tags:', default: ''}, function (err, tags) {
       read({prompt: 'asset url:', default: ''}, function (err, assetUrl) {
         read({prompt: 'code url:', default: ''}, function (err, codeUrl) {
@@ -68,6 +70,10 @@ function prompt(callback) {
       })
     })
   })
+}
+
+function capitalize(text) {
+  return text[0].toUpperCase() + text.substr(1)
 }
 
 prompt((title, tags, assetUrl, codeUrl) => {
