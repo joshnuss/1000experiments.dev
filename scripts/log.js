@@ -1,5 +1,6 @@
-const marked = require('marked')
-const getPosts = require('./posts.js')
+import marked from 'marked'
+import { getPosts } from './posts.js'
+
 const since = process.argv[2]
 
 let template = ''

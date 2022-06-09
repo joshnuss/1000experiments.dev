@@ -20,6 +20,7 @@
     "date-fns": "^2.17.0",
     "eslint": "^7.26.0",
     "eslint-plugin-svelte3": "^2.7.3",
+    "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
     "marked": "^2.0.3",
     "mdsvex": "^0.9.0",
@@ -35,8 +36,8 @@
     "svelte": "^3.29.0",
     "svelte-preprocess": "^4.0.0",
     "svelte-seo": "^1.4.0",
+    "typescript": "^4.0.0",
     "vercel": "^21.3.1",
-    "vite": "^2.1.0",
-    "typescript": "^4.0.0"
+    "vite": "^2.1.0"
   }
 }
