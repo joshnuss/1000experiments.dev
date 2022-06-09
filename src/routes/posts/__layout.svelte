@@ -3,8 +3,8 @@
   import SignupForm from '$lib/components/SignupForm.svelte'
   import { findPost } from '$lib/posts'
 
-  export async function load({ page }) {
-    const post = findPost(page.path.split('/')[2])
+  export async function load({ url }) {
+    const post = findPost(url.pathname.split('/')[2])
 
     if (!post) {
       return {
