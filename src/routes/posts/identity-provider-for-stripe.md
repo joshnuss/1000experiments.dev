@@ -6,9 +6,9 @@ permalink: identity-provider-for-stripe
 tags: stripe, idp, auth
 ---
 
-After trying to build a couple of SaaS projects, onc requirement I deal with again and again is **gating access based on payment**.
+After trying to build a couple of SaaS projects, one requirement I deal with again and again is **gating access based on payment**.
 
-Unfourtunately, I couldn't find an option out there that would work for me out of the box.
+Unfourtunately, I couldn't find an option out there that would work for me out of the box. There are lots of options for authentication, and Stripe Checkout or Elements are easy to add. What's missing is something that connects the authentication and billing together.
 
 From what I can tell, **these are my options**:
 
