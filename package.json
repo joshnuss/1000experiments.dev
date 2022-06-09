@@ -15,7 +15,7 @@
     "deploy": "vercel deploy --prod"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "next",
+    "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
     "date-fns": "^2.17.0",
     "eslint": "^7.26.0",
