@@ -1,8 +1,8 @@
 <script context="module">
   import { findByTag } from '$lib/posts'
 
-  export function load({page}) {
-    const { tag } = page.params
+  export function load({ params }) {
+    const { tag } = params
     const posts = findByTag(tag)
 
     return {
