@@ -9,7 +9,7 @@
   // export let segment
 
   onMount(() => {
-    Fathom.load(process.env.VITE_FATHOM_SITE_ID, {
+    Fathom.load(import.meta.env.VITE_FATHOM_SITE_ID, {
       includedDomains: [ '1000experiments.dev' ]
     })
   })
