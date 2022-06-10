@@ -12,10 +12,10 @@ Unfourtunately, I couldn't find an option out there that would work for me out o
 
 From what I can tell, **these are my options**:
 
-- **Roll your own**: Building a basic version isn't too too hard (maybe 1-2 weeks?), but they always end up needing the same features. For example: multiple users per account, OAuth, SSO, MFA, blocking account access when payment fails, ability to change prices, to name a few. I really don't want to rebuild this for each app. I'd prefer a shared solution that can be integrated quickly (ideally in less than 10 minutes).
-- **[Auth0](https://auth0.com)**: It handles authentication, but it doesn't integrate billing. Also, I find it overly complicated. I want something that is dead simple.
-- **[Supabase](https://supabase.com)**: It does the authentication part, but doesn't gate based on Stripe. Also it's an integration on the database level, I'd prefer something that is agnostic to the storage medium. For example, I often have a service level or multiple services with different stacks. Each request would result in multiple REST calls to Supabase which would slow things down.
-- **[Clerk](https://clerk.dev)**: Requires integration of UI components, only React support ATM. Also billing integration isn't supported.
+- **Roll your own**: Building a basic version isn't too too hard (maybe 1-2 weeks?), but they always end up needing the same features. For example: multiple users per account, OAuth, SSO, MFA, blocking account access when payment fails, ability to change prices, to name a few. I'd prefer a shared solution that can be integrated quickly (ideally in less than 10 minutes).
+- **[Auth0](https://auth0.com)**: It handles authentication, but it doesn't integrate billing. Also, it can get a bit complicated. I want something that is easy, focused on SaaS business specifically and doesn't need to cover every scenario.
+- **[Supabase](https://supabase.com)**: It does the authentication part, but doesn't gate based on Stripe. Also it's an integration on the database level, I'd prefer something that is agnostic to the storage medium. For example, I often have a service level or multiple services with different stacks. Each request would result in multiple REST calls to Supabase which would slow things down. I would prefer if it didn't force a database strategy.
+- **[Clerk](https://clerk.dev)**: Looks interesting, but requires integration of UI components, and only React is supported ATM. Also billing integration isn't supported.
 - **[Memberful](https://memberful.com)**: Takes 5-10% of your transaction fees. Not JWT based, requires GraphQL API calls to get info about "current user". Seems to be more focused on WordPress. I want this to be focused on SaaS apps only. So it's much slimmer.
 
 ## The idea
