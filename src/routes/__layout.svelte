@@ -10,6 +10,7 @@
 
   onMount(() => {
     Fathom.load(import.meta.env.VITE_FATHOM_SITE_ID, {
+      url: import.meta.env.VITE_FATHOM_SCRIPT_URL,
       includedDomains: [ '1000experiments.dev' ]
     })
   })
