@@ -1,8 +1,21 @@
 <script>
   import '../app.css'
+  import { onMount } from 'svelte'
+  import { browser } from '$app/env'
+  import { page } from '$app/stores'
   import 'prism-themes/themes/prism-material-light.css'
+  import * as Fathom from 'fathom-client'
   import Footer from '$lib/components/Footer.svelte'
   // export let segment
+
+  onMount(() => {
+    Fathom.load(process.env.VITE_FATHOM_SITE_ID, {
+      includedDomains: [ '1000experiments.dev' ]
+    })
+  })
+
+  // track a page view when the pathname changes
+  $: $page.url.pathname, browser && Fathom.trackPageview()
 </script>
 
 <header>

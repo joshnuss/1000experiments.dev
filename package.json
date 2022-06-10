@@ -20,6 +20,7 @@
     "date-fns": "^2.17.0",
     "eslint": "^7.26.0",
     "eslint-plugin-svelte3": "^2.7.3",
+    "fathom-client": "^3.4.1",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
     "marked": "^2.0.3",
