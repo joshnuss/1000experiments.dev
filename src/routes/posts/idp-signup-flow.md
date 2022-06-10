@@ -37,7 +37,7 @@ export default {
 		'signup.success': 'https://myapp.tld/welcome-aboard',
 		'signup.canceled': 'https://myapp.tld/',
 		'signup.failed': 'https://myapp.tld/?message=signup-failed',
-    // more callbacks to come: login.success, signout.success, plan.update, account.closed etc..
+		// more callbacks to come: login.success, signout.success, plan.update, account.closed etc..
 	},
 
 	defaultProvider: 'bogus',
@@ -56,10 +56,10 @@ export default {
 	defaultPeriod: 'monthly',
 	products: {
 		basic: {
-      // stripe product id
+			// stripe product id
 			id: 'prod_xyz1234',
 			prices: {
-        // stripe price ids
+				// stripe price ids
 				monthly: 'price_xyz1234',
 				yearly: 'price_xyz1234'
 			}
