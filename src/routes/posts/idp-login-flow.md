@@ -10,13 +10,15 @@ Yesterday I made progress on the [signup flow](/posts/idp-signup-flow), today I 
 
 ## Plan
 
-The login consists of redirecting the user to the OAuth provider, handling the return back. And sending the user back to the app with a JWT and refresh token.
+The login consists of redirecting the user to the OAuth provider, handling the data when they return back. Then sending the user back to the main app with a JWT and refresh token.
 
-It will also need to handle refresh tokens and provide a way to revoke tokens. JWTs are issued with short expiration (15 minutes), but once revoked all services that use the JWT should be notified. The refresh token will also stop working immediately.
+It will also need to handle refreshing the access token and providing a way to revoke old refresh tokens.
+
+JWTs are issued with short expiration (15 minutes), but once revoked, all services that use the JWT should be notified. The refresh token will also stop working immediately.
 
 ## Endpoints
 
-- `/signin`: Sign in with default OAuth provider. Redirects to `/signin/<default-provider>`. Shows UI if user is a member of multiple accounts.
+- `/signin`: Sign in with default OAuth provider. Redirects to `/signin/<default-provider>`. Shows a UI if user is a member of multiple accounts.
 - `/signin/:provider`: Redirect to specific OAuth provider.
 - `/integrations/oauth2/callback`: Handle return from OAuth provider. Checks for user record, drops a cookie, issues JWT/refresh token and redirects to the configured `signin.success` URL.
 - `/refresh`: Refreshes and returns the new access token.
