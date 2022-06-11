@@ -79,4 +79,4 @@ https://github.com/joshnuss/idp-experiment
 ## Notes
 
 - Didn't have time to integrate database or JWT access tokens. Maybe that's the next part.
-- Investigate login flow too
+- Investigate the <a href="/posts/idp-login-flow">login flow</a>.

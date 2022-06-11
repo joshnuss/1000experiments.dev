@@ -1,20 +1,20 @@
 ---
-title: Identity provider for Stripe
+title: Identity provider for SaaS
 experiment: 221
 date: "2022-06-09"
 permalink: identity-provider-for-stripe
 tags: stripe, idp, auth
 ---
 
-After trying to build a couple of SaaS projects, one requirement I deal with again and again is **gating access based on payment**.
+After trying to build a couple of SaaS projects, one requirement I see repeatedly is **gating access based on payment**.
 
-Unfourtunately, I couldn't find an option out there that would work for me out of the box. There are lots of options for authentication, and Stripe Checkout or Elements are easy to add. What's missing is something that connects the authentication and billing together.
+I couldn't find a solution that work for me out of the box. There are lots of options for authentication, and Stripe Checkout or Elements are easy to add. What's missing is the part that ties the authentication and billing together.
 
 From what I can tell, **these are my options**:
 
 - **Roll your own**: Building a basic version isn't too too hard (maybe 1-2 weeks?), but they always end up needing the same features. For example: multiple users per account, OAuth, SSO, MFA, blocking account access when payment fails, ability to change prices, to name a few. I'd prefer a shared solution that can be integrated quickly (ideally in less than 10 minutes).
 - **[Auth0](https://auth0.com)**: It handles authentication, but it doesn't integrate billing. Also, it can get a bit complicated. I want something that is easy, focused on SaaS business specifically and doesn't need to cover every scenario.
-- **[Supabase](https://supabase.com)**: It does the authentication part, but doesn't gate based on Stripe. Also it's an integration on the database level, I'd prefer something that is agnostic to the storage medium. For example, I often have a service level or multiple services with different stacks. Each request would result in multiple REST calls to Supabase which would slow things down. I would prefer if it didn't force a database strategy.
+- **[Supabase](https://supabase.com)**: It's a neat product, built by a great team. It does the authentication part, but doesn't gate based on Stripe. Also it's an integration at the database level, I'd prefer something that is agnostic to the storage medium. Something that would be focused on SaaS specifically (multiple users per account, multiple accounts per user, account closing form, integrated payment on signup, etc).
 - **[Clerk](https://clerk.dev)**: Looks interesting, but requires integration of UI components, and only React is supported ATM. Also billing integration isn't supported.
 - **[Memberful](https://memberful.com)**: Takes 5-10% of your transaction fees. Not JWT based, requires GraphQL API calls to get info about "current user". Seems to be more focused on WordPress. I want this to be focused on SaaS apps only. So it's much slimmer.
 
@@ -27,16 +27,17 @@ It should:
 - Take less that **10 minutes to integrate**.
 - Handle the **Stripe integration** for checkout and billing portal.
 - Support **OAuth**, ie Google, GitHub, Twitter etc..
+- Integrate Stripe Checkout on signup.
 - Handle **SSO** (Single sign on), making enterprise deals possible without extra work.
 - Allow **teams**, ie. multiple users per account.
-- **JWT based**. No need to contact IDP to verify access. The JWT includes info about member's payment status and plan.
+- **JWT based**. No need to contact IDP to verify access. The JWT should include info about the member's payment status and plan.
 - **Open source**. Using a BSL license.
 - **Self hostable** for free.
-- **Paid hosting** option - assuming this idea works out and people actually want to pay for it ;) For now it's just an experiment
+- **Paid hosting** option - assuming this idea works out and people actually want to pay for it ;) For now it's just an experiment.
 
 ## Implementation
 
-Each app gets its own subdomain, for example if the app was `mydomain.tld`, `id.mydomain.tld` would be handled by the idp:
+Each app gets its own subdomain, for example if the app was `mydomain.tld`, `id.mydomain.tld` would be handled by the IDP:
 
 Then to integrate signup on a site, it would require just one link:
 
@@ -123,4 +124,4 @@ export default class OAuthClient {
 ## Notes
 
 - Used [fake-oauth2-server](https://github.com/patientsknowbest/fake-oauth2-server) to test it
-- Next, look into creating a demo of the signup flow
+- Next, look into creating a demo of the <a href="/posts/idp-signup-flow">signup flow</a>
