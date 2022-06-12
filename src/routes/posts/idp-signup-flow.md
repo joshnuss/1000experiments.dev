@@ -1,5 +1,5 @@
 ---
-title: IDP signup flow
+title: "IDP: Signup flow"
 experiment: 222
 date: "2022-06-10"
 permalink: idp-signup-flow
