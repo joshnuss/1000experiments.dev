@@ -6,24 +6,24 @@ permalink: idp-plan-change
 tags: idp, auth, stripe
 ---
 
-Next up is changing the plan. There will be 2 ways to do this:
+Next up is allows the user to change their plan. There will be 2 ways to do this:
 
-- Without any UI, using a link that specifies the plan `id.domain.tld/account/switch/:product?period=<period>`.
-- With a UI, using Stripe's [Customer Portal](https://stripe.com/docs/api/customer_portal) via the link `id.domain.tld/account/portal`. The billing portal with handle changing plans and canceling accounts.
+- **Without any UI**: Using a link that specifies the plan and period `id.domain.tld/account/switch/:product?period=<period>`.
+- **With a UI**: Using Stripe's [Customer Portal](https://stripe.com/docs/api/customer_portal) via the link `id.domain.tld/account/portal`. The billing portal with handle changing plans and canceling accounts too.
 
-In both cases, only account owners are allowed to perform these actions.
+In both cases, only account owners are allowed to modify the plan.
 
 ## Endpoints
 
 - `/account/switch/:product`: Updates the subscription for the account. Redirects to the configured `account.updated` URL.
-- `/account/portal`: Redirects to Stripe's billing portal. After success, redirects to the portal session.
-- `/integrations/stripe/portal/return`: Handles the return from billing portal. Issues a new JWT and refresh token and redirects to the configured `portal.return` URL.
+- `/account/portal`: Redirects to Stripe's billing portal.
+- `/integrations/stripe/portal/return`: Handles the return from the billing portal. Issues a new JWT and refresh token and redirects to the configured `portal.return` URL.
 
 ## Code
 
 ### Billing portal
 
-Creating a billing portal session and redirect to it:
+This endpoint creates a billing portal session and redirects the user to it:
 
 ```javascript
 // src/routes/account/portal.js
@@ -71,7 +71,7 @@ export async function get({ request }) {
 
 ### Direct change
 
-Changing the plan with a link looks like this:
+This endpoint allows changing the plan with just a link (no billing portal):
 
 ```javascript
 // src/routes/account/switch/[product].js
@@ -135,10 +135,10 @@ export async function get({ url, request, params }) {
 }
 ```
 
-Full commit: https://github.com/joshnuss/idp-experiment/commit/54177a054b0f0463d71a9741f9728dbea706fe79
+Full commit here: https://github.com/joshnuss/idp-experiment/commit/54177a054b0f0463d71a9741f9728dbea706fe79
 
 
 ## Notes
 
-- While implementing, I realized this the billing portal with also solve the use case of account cancelation. Just had to handle Stripe webhooks.
+- While implementing I realized this the billing portal with also solve the use case of account cancelation. Just have to handle Stripe webhooks.
 - Need to look into how token revocation works when changes are being made to account plan. Since account data is in the JWT, it will become stale. Could just issue a new JWT or require a sign-in.
