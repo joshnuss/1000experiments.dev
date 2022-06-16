@@ -1,5 +1,5 @@
 ---
-title: "IDP: Demos"
+title: "IdP: Demos"
 experiment: 226
 date: "2022-06-13"
 permalink: idp-demo

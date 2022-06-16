@@ -20,7 +20,7 @@ From what I can tell, **these are my options**:
 
 ## The idea
 
-An **identity provider** (IDP) specifically **for SaaS** apps.
+An **identity provider** (IdP) specifically **for SaaS** apps.
 
 It should:
 
@@ -30,14 +30,14 @@ It should:
 - Integrate Stripe Checkout on signup.
 - Handle **SSO** (Single sign on), making enterprise deals possible without extra work.
 - Allow **teams**, ie. multiple users per account.
-- **JWT based**. No need to contact IDP to verify access. The JWT should include info about the member's payment status and plan.
+- **JWT based**. No need to contact IdP to verify access. The JWT should include info about the member's payment status and plan.
 - **Open source**. Using a BSL license.
 - **Self hostable** for free.
 - **Paid hosting** option - assuming this idea works out and people actually want to pay for it ;) For now it's just an experiment.
 
 ## Implementation
 
-Each app gets its own subdomain, for example if the app was `mydomain.tld`, `id.mydomain.tld` would be handled by the IDP:
+Each app gets its own subdomain, for example if the app was `mydomain.tld`, `id.mydomain.tld` would be handled by the IdP:
 
 Then to integrate signup on a site, it would require just one link:
 

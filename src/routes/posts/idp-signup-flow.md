@@ -1,12 +1,12 @@
 ---
-title: "IDP: Signup flow"
+title: "IdP: Signup flow"
 experiment: 222
 date: "2022-06-10"
 permalink: idp-signup-flow
 tags: idp, stripe, auth
 ---
 
-In the last experiment, I worked out the main goals of the [IDP project](/posts/identity-provider-for-stripe). So it's time to look into the signup process.
+In the last experiment, I worked out the main goals of the [IdP project](/posts/identity-provider-for-stripe). So it's time to look into the signup process.
 
 ## Signup flow
 

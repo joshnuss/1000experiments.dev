@@ -1,5 +1,5 @@
 ---
-title: "IDP: Login flow"
+title: "IdP: Login flow"
 experiment: 223
 date: "2022-06-10"
 permalink: idp-login-flow

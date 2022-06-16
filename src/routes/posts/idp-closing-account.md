@@ -1,12 +1,12 @@
 ---
-title: "IDP: Closing accounts"
+title: "IdP: Closing accounts"
 experiment: 225
 date: "2022-06-12"
 permalink: idp-closing-account
 tags: idp, auth, stripe
 ---
 
-In the [last experiment](/posts/idp-plan-change), I integrated the [Stripe billing portal](https://stripe.com/docs/api/customer_portal) and realized it can handle the subscription canceling flow and result in closing the account in the IDP.
+In the [last experiment](/posts/idp-plan-change), I integrated the [Stripe billing portal](https://stripe.com/docs/api/customer_portal) and realized it can handle the subscription canceling flow and result in closing the account in the IdP.
 
 So all that's left to do:
 

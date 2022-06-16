@@ -1,5 +1,5 @@
 ---
-title: "IDP: Changing the plan"
+title: "IdP: Changing the plan"
 experiment: 224
 date: "2022-06-12"
 permalink: idp-plan-change
