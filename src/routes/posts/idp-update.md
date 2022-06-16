@@ -17,5 +17,6 @@ There are a few more features I'd like to prototype before starting a full build
 - **CLI**: Command-line program to perform setup and access API from terminal
 - **Dashboard**: A UI for editing the config
 - **Layering**: Research if it's possible to use a second instance of the IdP to manage the tenants. ie it runs on top of itself.
+- **Deployment**: Test deployment with cloud functions, node, and docker.
 
 Can launch a version without many of these features, but I'd like to investigate them a little to understand how hard they will be to accomplish.
