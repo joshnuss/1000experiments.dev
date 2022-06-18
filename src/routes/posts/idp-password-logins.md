@@ -12,10 +12,10 @@ In this experiment I look at what it takes to build password based logins with S
 
 I built the following endpoints
 
-- `/signup`: Signup
-- `/signin`: Signin
-- `/signout`: Signout
-- `/forgot-password`: Request a list to reset password
+- `/signup`: Signup a new user
+- `/signin`: Signin with an email and password
+- `/signout`: Signout to clear cookie
+- `/forgot-password`: Request a link to reset password
 - `/reset-password`: Resets password, verifies code
 
 ## Code
