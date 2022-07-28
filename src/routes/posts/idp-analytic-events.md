@@ -10,19 +10,21 @@ What's unique about the [IdP](/tag/idp) I'm building is it's focused on SaaS.
 
 One of the challenges I saw in building my [last SaaS project](https://getcarrierwave.com) is knowing usage stats of each user. If a user isn't using the system, I'd like to be notified as soon as possible so I can chat with them and find out what's wrong.
 
-Users that don't use the system are bad for business. Zombie users are going to churn anyway, so might as well be direct with them and learn what problems they are having early.
+Users that don't use the system are bad for business. Zombie users are going to churn anyway, might as well be direct with them and learn what problems they are having early.
 
 It's a [canary in the coal mine](https://en.wikipedia.org/wiki/Sentinel_species#Canaries_in_coal_mines).
 
-The double whammy is that solving these kind of problems can often be an important feature that the makes the product stickier for everyone.
+Plus, solving these kind of problems can surface important features that make the product stickier for everyone.
 
 ## Idea
 
-It would be cool if the IdP could track analytics about each member. Resource servers would send usage stats to the IdP via a REST endpoint. 
+It would be cool if the IdP could track analytics about each member. Resource servers would send usage stats to the IdP via a REST endpoint. This would be in addition to to the IdP tracking the last sign-in time for each user (users that don't sign in aren't using the product and that's important to know too.)
 
-The IdP would have a ClickHouse database to store these events.
+The IdP would use a ClickHouse database to store these kind of events.
 
 ## Code
+
+Let's create a SvelteKit project with ClickHouse integration:
 
 1. Create a SvelteKit project
 
@@ -47,17 +49,25 @@ Inside `clickhouse-client`, run SQL to create the database and table:
 
 ```sql
 CREATE DATABASE idp;
+
 USE idp;
-CREATE TABLE events (account_id UInt64, event_type String, inserted_at DateTime default now()) ENGINE MergeTree ORDER BY inserted_at;
+
+CREATE TABLE events (
+  account_id UInt64,
+  event_type String,
+  inserted_at DateTime default now()
+)
+ENGINE MergeTree
+ORDER BY inserted_at;
 ```
 
-3. Add ClickHouse [npm package](https://www.npmjs.com/package/clickhouse)
+3. Add the ClickHouse [npm package](https://www.npmjs.com/package/clickhouse)
 
 ```bash
 pnpm i -D clickhouse
 ```
 
-4. Create data access layer
+4. Create the data access abstraction
 
 ```javascript
 // src/lib/analytics.js
@@ -73,7 +83,7 @@ export async function trackEvent(account_id, event_type) {
 }
 ```
 
-5. Create SvelteKit route
+5. Create a SvelteKit route
 
 ```javascript
 // src/routes/event.js
@@ -99,6 +109,8 @@ export async function POST({ request }) {
 ```
 
 ## Demo
+
+Now we can hit the test server with events, and they should show up in ClickHouse:
 
 ```bash
 curl localhost:3000/event \
